@@ -6,15 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PortFolio</title>
   <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/hero.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 
-<body class="p-6 lg:p-0 lg:mx-36">
-
+<body class="mx-auto">
   <header
     class="flex flex-wrap sm:justify-start sm:flex-nowrap w-full bg-white text-sm py-3 bg-white shadow w-50 lg:container mx-auto lg:mt-6 rounded-2xl">
     <nav class="max-w-[85rem] w-full mx-auto px-4 flex flex-wrap basis-full items-center justify-between">
-      <a class="sm:order-1 flex-none text-2xl font-semibold  focus:outline-none focus:opacity-80"
-        href="#">Hi I'm Sunil</a>
+      <a class="sm:order-1 flex-none text-2xl font-semibold  focus:outline-none focus:opacity-80" href="#">Hi I'm
+        Sunil</a>
       <div class="sm:order-3 flex items-center gap-x-2">
         <button type="button"
           class="sm:hidden hs-collapse-toggle relative size-7 flex justify-center items-center gap-x-2 rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-transparent dark:border-neutral-700 dark:text-white dark:hover:bg-white/10 dark:focus:bg-white/10"
@@ -36,23 +38,23 @@
           <span class="sr-only">Toggle</span>
         </button>
         <button type="button"
-          class="py-2 px-3 inline-flex items-center gap-x-2 text-base font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-700 dark:focus:bg-neutral-700">
-          Contact
+          class="py-2 px-8 inline-flex items-center gap-x-2 text-base font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-700 dark:focus:bg-neutral-700">
+          Hire Me
         </button>
       </div>
       <div id="hs-navbar-alignment"
         class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:grow-0 sm:basis-auto sm:block sm:order-2"
         aria-labelledby="hs-navbar-alignment-collapse">
         <div class="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:mt-0 sm:ps-5">
-          <a class="font-medium text-base text-blue-500 focus:outline-none" href="#" aria-current="page">Home</a>
+          <a class="font-medium text-base text-blue-500 focus:outline-none " href="index.html"
+            aria-current="page">Home</a>
+          <a class="font-medium text-bas  text-gray-400 hover:text-gray-600 focus:text-gray-400 focus:outline-none"
+            href="about.html">About</a>
           <a class="font-medium text-base text-gray-400 hover:text-gray-600 focus:outline-none focus:text-gray-400"
-            href="#">About</a>
+            href="projects.html">Projects</a>
           <a class="font-medium text-base text-gray-400 hover:text-gray-600 focus:outline-none focus:text-gray-400"
-            href="#">Services</a>
-          <a class="font-medium text-base text-gray-400 hover:text-gray-600 focus:outline-none focus:text-gray-400"
-            href="#">Skills</a>
-            <a class="font-medium text-base text-gray-400 hover:text-gray-600 focus:outline-none focus:text-gray-400"
-            href="#">Contact</a>
+            href="projects.html">Contact</a>
+
         </div>
       </div>
     </nav>
@@ -60,93 +62,115 @@
 
   <main class="container mx-auto my-6">
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 ">
-      <div class=" bg-white p-6 grid gap-3 shadow rounded-2xl">
-        <img src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600" class="" alt="image">
-        <div>
-          <h1 class="text-2xl font-bold">V Sunil Kumar</h1>
-          <p class="text-md font-light mt-1">I am <span class="font-semibold">UI/UX Designer</span> & <spanit
-              class="font-semibold">Front
-              End Developer</span> with enhanced skills in Graphic Designing, Video Editing & Web Designing</p>
-        </div>
-        <div class="flex gap-2">
-          <button class="lg:w-6/12 lg:p-1 h-14 w-11/12 border shadow-sm p-2 text-lg rounded-md" type="button">Ping
-            me</button>
-          <button class="lg:w-6/12 lg:p-1 h-14 w-11/12 bg-blue-500 text-white border shadow-sm p-2 text-lg rounded-md"
-            type="button">Resume</button>
-        </div>
-        <div class="flex gap-1">
-          <div class="h-8 w-8 rounded-md border"></div>
-          <div class="h-8 w-8 rounded-md border"></div>
-          <div class="h-8 w-8 rounded-md border"></div>
-          <div class="h-8 w-8 rounded-md border"></div>
+      <div class="bg-white p-6 grid gap-3 shadow rounded-2xl">
+        <div class=" flex flex-col gap-3 ">
+          <img src="./assets/hero.jpg" class="w-full rounded-lg" alt="">
+          <div>
+            <h1 class="text-2xl font-bold">V Sunil Kumar</h1>
+            <p class="text-base font-normal mt-1">I am <span class="font-bold  mark h-1 ">UI/UX Designer</span> & <span
+                class="font-bold  mark h-1">Front
+                End Developer</span> with enhanced skills in Graphic Designing, Video Editing & 2D Illustation Arts</p>
+          </div>
+          <div class="flex gap-2">
+            <button
+              class="lg:w-6/12 lg:p-1 h-11 w-11/12 border items-center justify-center flex gap-1 shadow-sm p-2 text-lg font-semibold rounded-md"
+              type="button">Hire
+              me <span class="material-symbols-outlined">message</span> </button>
+            <button
+              class="lg:w-6/12 lg:p-1 h-11 w-11/12 bg-blue-500 text-white border items-center justify-center flex gap-1 shadow-sm p-2 text-lg font-semibold rounded-md"
+              type="button">Resume <span class="material-symbols-outlined">download</span> </button>
+          </div>
+          <div class="flex gap-3">
+            <div class="p-2 border rounded-md w-9 h-9 grid items-center justify-center text-center">
+              <i class="social-links fa fa-github"></i>
+            </div>
+            <div class="p-2 border rounded-md w-9 h-9 grid items-center justify-center text-center">
+              <i class="social-links fa fa-codepen"></i>
+
+            </div>
+            <div class="p-2 border rounded-md w-9 h-9 grid items-center justify-center text-center">
+              <i class="social-links fa fa-linkedin"></i>
+
+            </div>
+            <div class="p-2 border rounded-md w-9 h-9 grid items-center justify-center text-center">
+              <i class="social-links fa fa-behance"></i>
+
+            </div>
+          </div>
         </div>
       </div>
       <div class=" bg-white grid grid-rows-2 gap-6">
-        <div class="bg-white p-6 gap-3 grid shadow rounded-2xl">
+        <div class="bg-white p-6 grid shadow rounded-2xl">
           <p class="text-2xl font-bold">Work Experience</p>
           <div
             class="overflow-y-scroll [&::-webkit-scrollbar]:w-1 [&::-webkit-scrollbar-track]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-gray-300 h-96 max-h-52 rounded-xl ">
-            <div class="flex flex-col mt-3 gap-1">
-              <p class="mt-1 text-xs font-light text-muted dark:text-light/70">
-                OCT 2023 - PRESENT . FULL TIME
+            <div class="flex flex-col mt-3 gap-1 ">
+              <hr class="pe-2">
+
+              <p class="mt-1 text-xs font-medium ">
+                OCT 2023 - PRESENT
               </p>
               <div class="flex items-center gap-3">
                 <div class="grid h-8 w-8 shrink-0 place-content-center rounded-lg bg-light dark:bg-dark-2">
-                  <img src="assets/img/meta.svg" alt="" class="h-5 w-5">
+                  <img src="./assets/intexm.jpg" alt="" class="h-8 rounded-sm w-8">
                 </div>
                 <div class="">
-                  <h6 class="text-md font-semibold text-dark dark:text-light/70">
+                  <h6 class="text-md font-semibold text-dark">
                     Intexm Media
                   </h6>
-                  <p class="text-sm text-muted">UI/UX Designer</p>
+                  <p class="text-sm font-medium ">UI/UX Designer | Full time</p>
                 </div>
               </div>
             </div>
+
             <div class="flex flex-col mt-3 gap-1">
-              <p class="mt-1 text-xs font-light text-muted dark:text-light/70">
-                SEPT 2023 - OCT 2023 . PART TIME
+              <hr class="pe-2">
+              <p class="mt-1 text-xs font-medium ">
+                SEPT 2023 - OCT 2023
               </p>
               <div class="flex items-center gap-3">
                 <div class="grid h-8 w-8 shrink-0 place-content-center rounded-lg bg-light dark:bg-dark-2">
-                  <img src="assets/img/meta.svg" alt="" class="h-5 w-5">
+                  <img src="./assets/previshree.jpg" alt="" class="h-8 rounded-sm w-8">
                 </div>
                 <div class="">
-                  <h6 class="text-md font-semibold text-dark dark:text-light/70">
+                  <h6 class="text-md font-semibold text-dark">
                     Pravishree Design & Co.
                   </h6>
-                  <p class="text-sm text-muted">Web Developer</p>
+                  <p class="text-sm font-medium">Web Developer | Full time</p>
                 </div>
               </div>
             </div>
             <div class="flex flex-col mt-3 gap-1">
-              <p class="mt-1 text-xs font-light text-muted dark:text-light/70">
+              <hr class="pe-2">
+              <p class="mt-1 text-xs font-medium ">
                 3 MONTHS . INTERNSHIP
               </p>
               <div class="flex items-center gap-3">
                 <div class="grid h-8 w-8 shrink-0 place-content-center rounded-lg bg-light dark:bg-dark-2">
-                  <img src="assets/img/meta.svg" alt="" class="h-5 w-5">
+                  <img src="./assets/pyschobeings.jpg" alt="" class="h-8 rounded-sm w-8">
                 </div>
                 <div class="">
-                  <h6 class="text-md font-semibold text-dark dark:text-light/70">
+                  <h6 class="text-md font-semibold text-dark">
                     Psychobeings
                   </h6>
-                  <p class="text-sm text-muted">Video Editor</p>
+                  <p class="text-sm font-medium">Video Editor</p>
                 </div>
               </div>
             </div>
             <div class="flex flex-col mt-3 gap-1">
-              <p class="mt-1 text-xs font-light text-muted dark:text-light/70">
+              <hr class="pe-2">
+              <p class="mt-1 text-xs font-medium ">
                 3 MONTHS . INTERNSHIP
               </p>
               <div class="flex items-center gap-3">
                 <div class="grid h-8 w-8 shrink-0 place-content-center rounded-lg bg-light dark:bg-dark-2">
-                  <img src="assets/img/meta.svg" alt="" class="h-5 w-5">
+                  <img src="./assets/salesera_logo.jpg" alt="" class="h-8 rounded-sm w-8">
                 </div>
                 <div class="">
-                  <h6 class="text-md font-semibold text-dark dark:text-light/70">
+                  <h6 class="text-md font-semibold text-dark">
                     Sales Era
                   </h6>
-                  <p class="text-sm text-muted">Video Editor</p>
+                  <p class="text-sm font-medium">Video Editor</p>
                 </div>
               </div>
             </div>
