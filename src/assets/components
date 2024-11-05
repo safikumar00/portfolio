@@ -1,0 +1,88 @@
+<div class="flex flex-wrap items-center justify-between border rounded-2xl p-3 gap-3">
+    <div class="img h-32 w-full overflow-hidden border rounded-xl">
+      <img src="./assets/images/css_logo.svg" class="w-full" alt="">
+    </div>
+    <div>
+      <p class="text-xl font-semibold birder custom-font">CSS-Pure ART</p>
+      <div class="flex items-center gap-3">
+        <p>Tools Used : </p>
+        <div class="flex">
+          <img src="./assets/images/html_logo.jpg" alt="" class="h-4 w-4 rounded">
+        <img src="./assets/images/css_logo.svg" alt="" class="h-4 w-4 rounded">
+        </div>
+      </div>
+    </div>
+    <div class="flex items-center justify-center text-lg font-semibold">
+      Visit <span class="material-symbols-outlined">north_east</span>
+    </div>
+  </div>
+  <div class="flex flex-wrap items-center justify-between border rounded-2xl p-3 gap-3">
+    <div class="img h-32 w-full overflow-hidden border rounded-xl">
+      <img src="./assets/images/css_logo.svg" class="w-full" alt="">
+    </div>
+    <div>
+      <p class="text-xl font-semibold birder custom-font">CSS-Pure ART</p>
+      <div class="flex items-center gap-3">
+        <p>Tools Used : </p>
+        <div class="flex">
+          <img src="./assets/images/html_logo.jpg" alt="" class="h-4 w-4 rounded">
+        <img src="./assets/images/css_logo.svg" alt="" class="h-4 w-4 rounded">
+        </div>
+      </div>
+    </div>
+    <div class="flex items-center justify-center text-lg font-semibold">
+      Visit <span class="material-symbols-outlined">north_east</span>
+    </div>
+  </div>
+
+
+  <div class="mt-6 grid grid-cols-2 gap-6">
+    <div class="rounded-2xl bg-light text-center md:p-4">
+      <div class="grid place-content-center rounded-lg p-2 items-center justify-center">
+        <img src="./assets/images/uiux_icon.svg" class="h-12 w-12 lg:h-16 lg:w-16" alt="">
+      </div>
+      <p class="mt-3 text-base font-medium text-dark">
+        UI UX Design
+      </p>
+    </div>
+    <div class="rounded-2xl bg-light text-center md:p-4">
+      <div class="grid place-content-center rounded-lg p-2 items-center justify-center">
+        <img src="./assets/images/branding_icon.svg" class="h-12 w-12 lg:h-16 lg:w-16" alt="">
+      </div>
+      <p class="mt-3 text-base font-medium text-dark">
+        Branding
+      </p>
+    </div>
+    <div class="rounded-2xl bg-light text-center md:p-4">
+      <div class="grid place-content-center rounded-lg p-2 items-center justify-center">
+        <img src="./assets/images/graphic_design.svg" class="h-12 w-12 lg:h-16 lg:w-16" alt="">
+      </div>
+      <p class="mt-3 text-base font-medium text-dark">
+        Graphic Design
+      </p>
+    </div>
+    <div class="rounded-2xl bg-light text-center md:p-4">
+      <div class="grid place-content-center rounded-lg p-2 items-center justify-center">
+        <img src="./assets/images/videoediting_icon.svg" class="h-12 w-12 lg:h-16 lg:w-16" alt="">
+      </div>
+      <p class="mt-3 text-base font-medium text-dark">
+        Video Editing
+      </p>
+    </div>
+    <div class="rounded-2xl bg-light text-center md:p-4">
+      <div class="grid place-content-center rounded-lg p-2 items-center justify-center">
+        <img src="./assets/images/videoediting_icon.svg" class="h-12 w-12 lg:h-16 lg:w-16" alt="">
+      </div>
+      <p class="mt-3 text-base font-medium text-dark">
+        Video Editing
+      </p>
+    </div>
+    <div class="rounded-2xl bg-light text-center md:p-4">
+      <div class="grid place-content-center rounded-lg p-2 items-center justify-center">
+        <img src="./assets/images/videoediting_icon.svg" class="h-12 w-12 lg:h-16 lg:w-16" alt="">
+      </div>
+      <p class="mt-3 text-base font-medium text-dark">
+        Video Editing
+      </p>
+    </div>
+  </div>

@@ -6,16 +6,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PortFolio</title>
   <link href="./output.css" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/hero.css">
+  <link rel="stylesheet" href="./assets/custom.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Lexend:wght@100..900&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .custom-font {
+      font-family: "Lexend", sans-serif;
+    }
+  </style>
+
 </head>
+ 
 
 <body class="mx-auto">
   <header
-    class="flex flex-wrap sm:justify-start sm:flex-nowrap w-full bg-white text-sm py-3 bg-white shadow w-50 lg:container mx-auto lg:mt-6 rounded-2xl">
+    class="flex flex-wrap sm:justify-start sm:flex-nowrap w-full bg-white text-sm py-3 bg-white shadow w-50 lg:container mx-auto  rounded-2xl">
     <nav class="max-w-[85rem] w-full mx-auto px-4 flex flex-wrap basis-full items-center justify-between">
-      <a class="sm:order-1 flex-none text-2xl font-semibold  focus:outline-none focus:opacity-80" href="#">Hi I'm
+      <a class="sm:order-1 flex-none text-2xl font-semibold  focus:outline-none focus:opacity-80 custom-font"
+        href="#">Hi I'm
         Sunil</a>
       <div class="sm:order-3 flex items-center gap-x-2">
         <button type="button"
@@ -45,14 +58,14 @@
       <div id="hs-navbar-alignment"
         class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:grow-0 sm:basis-auto sm:block sm:order-2"
         aria-labelledby="hs-navbar-alignment-collapse">
-        <div class="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:mt-0 sm:ps-5">
-          <a class="font-medium text-base text-blue-500 focus:outline-none " href="index.html"
+        <div class="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:mt-0 custom-font sm:ps-5 ">
+          <a class="font-medium text-lg text-blue-500 focus:outline-none " href="index.html"
             aria-current="page">Home</a>
-          <a class="font-medium text-bas  text-gray-400 hover:text-gray-600 focus:text-gray-400 focus:outline-none"
+          <a class="font-medium text-lg  text-gray-400 hover:text-gray-600 focus:text-gray-400 focus:outline-none"
             href="about.html">About</a>
-          <a class="font-medium text-base text-gray-400 hover:text-gray-600 focus:outline-none focus:text-gray-400"
+          <a class="font-medium text-lg text-gray-400 hover:text-gray-600 focus:outline-none focus:text-gray-400"
             href="projects.html">Projects</a>
-          <a class="font-medium text-base text-gray-400 hover:text-gray-600 focus:outline-none focus:text-gray-400"
+          <a class="font-medium text-lg text-gray-400 hover:text-gray-600 focus:outline-none focus:text-gray-400"
             href="projects.html">Contact</a>
 
         </div>
@@ -63,48 +76,48 @@
   <main class="container mx-auto my-6">
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 ">
       <div class="bg-white p-6 grid gap-3 shadow rounded-2xl">
-        <div class=" flex flex-col gap-3 ">
-          <img src="./assets/hero.jpg" class="w-full rounded-lg" alt="">
+        <div class=" flex flex-col gap-6 ">
+          <img src="./assets/images/hero.jpg" class="w-full rounded-lg" alt="">
           <div>
-            <h1 class="text-2xl font-bold">V Sunil Kumar</h1>
-            <p class="text-base font-normal mt-1">I am <span class="font-bold  mark h-1 ">UI/UX Designer</span> & <span
+            <h1 class="text-3xl font-bold  custom-font">V Sunil Kumar 🍃👋</h1>
+            <p class="text-lg font-normal mt-1">I am <span class="font-bold  mark h-1 ">UI/UX Designer</span> & <span
                 class="font-bold  mark h-1">Front
                 End Developer</span> with enhanced skills in Graphic Designing, Video Editing & 2D Illustation Arts</p>
           </div>
           <div class="flex gap-2">
             <button
-              class="lg:w-6/12 lg:p-1 h-11 w-11/12 border items-center justify-center flex gap-1 shadow-sm p-2 text-lg font-semibold rounded-md"
+              class="lg:w-6/12 lg:p-1 h-14 w-11/12 border items-center justify-center flex gap-1 shadow-sm p-2 text-lg font-semibold rounded-md"
               type="button">Hire
               me <span class="material-symbols-outlined">message</span> </button>
             <button
-              class="lg:w-6/12 lg:p-1 h-11 w-11/12 bg-blue-500 text-white border items-center justify-center flex gap-1 shadow-sm p-2 text-lg font-semibold rounded-md"
+              class="lg:w-6/12 lg:p-1 h-14 w-11/12 bg-blue-500 text-white border items-center justify-center flex gap-1 shadow-sm p-2 text-lg font-semibold rounded-md"
               type="button">Resume <span class="material-symbols-outlined">download</span> </button>
           </div>
           <div class="flex gap-3">
-            <div class="p-2 border rounded-md w-9 h-9 grid items-center justify-center text-center">
+            <div class="p-2 border rounded-md w-12 h-12 grid items-center justify-center text-center">
               <i class="social-links fa fa-github"></i>
             </div>
-            <div class="p-2 border rounded-md w-9 h-9 grid items-center justify-center text-center">
+            <div class="p-2 border rounded-md w-12 h-12 grid items-center justify-center text-center">
               <i class="social-links fa fa-codepen"></i>
 
             </div>
-            <div class="p-2 border rounded-md w-9 h-9 grid items-center justify-center text-center">
+            <div class="p-2 border rounded-md w-12 h-12 grid items-center justify-center text-center">
               <i class="social-links fa fa-linkedin"></i>
 
             </div>
-            <div class="p-2 border rounded-md w-9 h-9 grid items-center justify-center text-center">
+            <div class="p-2 border rounded-md w-12 h-12 grid items-center justify-center text-center">
               <i class="social-links fa fa-behance"></i>
 
             </div>
           </div>
         </div>
       </div>
-      <div class=" bg-white grid grid-rows-2 gap-6">
-        <div class="bg-white p-6 grid shadow rounded-2xl">
-          <p class="text-2xl font-bold">Work Experience</p>
+      <div class=" grid grid-rows-2 gap-6">
+        <div class="bg-white p-6 grid shadow rounded-2xl gap-3">
+          <p class="text-2xl font-bold custom-font">Work Experience 🧑‍💻</p>
           <div
-            class="overflow-y-scroll [&::-webkit-scrollbar]:w-1 [&::-webkit-scrollbar-track]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-gray-300 h-96 max-h-52 rounded-xl ">
-            <div class="flex flex-col mt-3 gap-1 ">
+            class="overflow-y-scroll scroll-auto [&::-webkit-scrollbar]:w-1 [&::-webkit-scrollbar-track]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-gray-300 h-96 max-h-52">
+            <div class="flex flex-col gap-1 ">
               <hr class="pe-2">
 
               <p class="mt-1 text-xs font-medium ">
@@ -112,7 +125,7 @@
               </p>
               <div class="flex items-center gap-3">
                 <div class="grid h-8 w-8 shrink-0 place-content-center rounded-lg bg-light dark:bg-dark-2">
-                  <img src="./assets/intexm.jpg" alt="" class="h-8 rounded-sm w-8">
+                  <img src="./assets/images/intexm.jpg" alt="" class="h-8 rounded-sm w-8">
                 </div>
                 <div class="">
                   <h6 class="text-md font-semibold text-dark">
@@ -130,7 +143,7 @@
               </p>
               <div class="flex items-center gap-3">
                 <div class="grid h-8 w-8 shrink-0 place-content-center rounded-lg bg-light dark:bg-dark-2">
-                  <img src="./assets/previshree.jpg" alt="" class="h-8 rounded-sm w-8">
+                  <img src="./assets/images/previshree.jpg" alt="" class="h-8 rounded-sm w-8">
                 </div>
                 <div class="">
                   <h6 class="text-md font-semibold text-dark">
@@ -147,7 +160,7 @@
               </p>
               <div class="flex items-center gap-3">
                 <div class="grid h-8 w-8 shrink-0 place-content-center rounded-lg bg-light dark:bg-dark-2">
-                  <img src="./assets/pyschobeings.jpg" alt="" class="h-8 rounded-sm w-8">
+                  <img src="./assets/images/pyschobeings.jpg" alt="" class="h-8 rounded-sm w-8">
                 </div>
                 <div class="">
                   <h6 class="text-md font-semibold text-dark">
@@ -164,7 +177,7 @@
               </p>
               <div class="flex items-center gap-3">
                 <div class="grid h-8 w-8 shrink-0 place-content-center rounded-lg bg-light dark:bg-dark-2">
-                  <img src="./assets/salesera_logo.jpg" alt="" class="h-8 rounded-sm w-8">
+                  <img src="./assets/images/salesera_logo.jpg" alt="" class="h-8 rounded-sm w-8">
                 </div>
                 <div class="">
                   <h6 class="text-md font-semibold text-dark">
@@ -176,214 +189,228 @@
             </div>
           </div>
         </div>
-        <div class="bg-white p-6 gap-3 grid shadow rounded-2xl">
-          <p class="text-2xl font-bold">Skill Set</p>
-          <div class="grid grid-cols-2 gap-4 md:grid-cols-3">
+        <div class="bg-white p-6 grid shadow rounded-2xl gap-3">
+          <p class="text-2xl font-bold custom-font">Tool Set 🛠️</p>
+          <div
+            class="grid grid-cols-2 gap-4 md:grid-cols-3 overflow-y-scroll [&::-webkit-scrollbar]:w-1 [&::-webkit-scrollbar-track]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-gray-300 h-96 max-h-52 rounded-xl ">
             <div class="text-center">
-              <div class="grid place-content-center rounded-lg bg-light p-3 dark:bg-dark-2">
-                <img src="assets/img/figma.svg" alt="" class="h-8 w-8">
+              <div class="grid place-content-center rounded-lg bg-light p-1 dark:bg-dark-2">
+                <img src="./assets/images/figma.jpg" alt="" class="h-12 w-12 rounded-md">
               </div>
-              <p class="mt-1 text-base font-medium text-dark dark:text-light/70">
+              <p class="mt-1 text-base font-medium text-dark">
                 Figma
               </p>
             </div>
             <div class="text-center">
-              <div class="grid place-content-center rounded-lg bg-light p-3 dark:bg-dark-2">
-                <img src="assets/img/notion.svg" alt="" class="h-8 w-8">
+              <div class="grid place-content-center rounded-lg bg-light p-1 dark:bg-dark-2">
+                <img src="./assets/images/illustrator.jpg" alt="" class="h-12 w-12 rounded-md">
               </div>
-              <p class="mt-1 text-base font-medium text-dark dark:text-light/70">
-                Notion
+              <p class="mt-1 text-base font-medium text-dark">
+                Adobe illustrator
               </p>
             </div>
             <div class="text-center">
-              <div class="grid place-content-center rounded-lg bg-light p-3 dark:bg-dark-2">
-                <img src="assets/img/mico.svg" alt="" class="h-8 w-8">
+              <div class="grid place-content-center rounded-lg bg-light p-1 dark:bg-dark-2">
+                <img src="./assets/images/photoshop.jpg" alt="" class="h-12 w-12 rounded-md">
               </div>
-              <p class="mt-1 text-base font-medium text-dark dark:text-light/70">
-                Mico
+              <p class="mt-1 text-base font-medium text-dark">
+                Adobe Photoshop
               </p>
             </div>
             <div class="text-center">
-              <div class="grid place-content-center rounded-lg bg-light p-3 dark:bg-dark-2">
-                <img src="assets/img/framer.svg" alt="" class="h-8 w-8">
+              <div class="grid place-content-center rounded-lg bg-light p-1 dark:bg-dark-2">
+                <img src="./assets/images/html_logo.jpg" alt="" class="h-12 w-12 rounded-md">
               </div>
-              <p class="mt-1 text-base font-medium text-dark dark:text-light/70">
-                Framer
+              <p class="mt-1 text-base font-medium text-dark">
+                HTML
               </p>
             </div>
             <div class="text-center">
-              <div class="grid place-content-center rounded-lg bg-light p-3 dark:bg-dark-2">
-                <img src="assets/img/webflow.svg" alt="" class="h-8 w-8">
+              <div class="grid place-content-center rounded-lg bg-light p-1 dark:bg-dark-2">
+                <img src="./assets/images/css_logo.svg" alt="" class="h-12 w-12 rounded-md">
               </div>
-              <p class="mt-1 text-base font-medium text-dark dark:text-light/70">
-                Webflow
+              <p class="mt-1 text-base font-medium text-dark">
+                CSS
               </p>
             </div>
             <div class="text-center">
-              <div class="grid place-content-center rounded-lg bg-light p-3 dark:bg-dark-2">
-                <img src="assets/img/zeplin.svg" alt="" class="h-8 w-8">
+              <div class="grid place-content-center rounded-lg bg-light p-1 dark:bg-dark-2">
+                <img src="./assets/images/js_logo.jpg" alt="" class="h-12 w-12 rounded-md">
               </div>
-              <p class="mt-1 text-base font-medium text-dark dark:text-light/70">
-                Zeplin
+              <p class="mt-1 text-base font-medium text-dark">
+                JScript
+              </p>
+            </div>
+            <div class="text-center">
+              <div class="grid place-content-center rounded-lg bg-light p-1 dark:bg-dark-2">
+                <img src="./assets/images/tailwindcsss.jpg" alt="" class="h-12 w-12 rounded-md">
+              </div>
+              <p class="mt-1 text-base font-medium text-dark">
+                TailWind CSS
+              </p>
+            </div>
+            <div class="text-center">
+              <div class="grid place-content-center rounded-lg bg-light p-1 dark:bg-dark-2">
+                <img src="./assets/images/Bootstrap_logo.jpg" alt="" class="h-12 w-12 rounded-md">
+              </div>
+              <p class="mt-1 text-base font-medium text-dark">
+                BootStrap
+              </p>
+            </div>
+            <div class="text-center">
+              <div class="grid place-content-center rounded-lg bg-light p-1 dark:bg-dark-2">
+                <img src="./assets/images/jquery_logo.jpg" alt="" class="h-12 w-12 rounded-md">
+              </div>
+              <p class="mt-1 text-base font-medium text-dark">
+                JQuery
+              </p>
+            </div>
+            <div class="text-center">
+              <div class="grid place-content-center rounded-lg bg-light p-1 dark:bg-dark-2">
+                <img src="./assets/images/after_effects.jpg" alt="" class="h-12 w-12 rounded-md">
+              </div>
+              <p class="mt-1 text-base font-medium text-dark">
+                After Effects
+              </p>
+            </div>
+            <div class="text-center">
+              <div class="grid place-content-center rounded-lg bg-light p-1 dark:bg-dark-2">
+                <img src="./assets/images/canva.jpg" alt="" class="h-12 w-12 rounded-md">
+              </div>
+              <p class="mt-1 text-base font-medium text-dark">
+                Canva
+              </p>
+            </div>
+            <div class="text-center">
+              <div class="grid place-content-center rounded-lg bg-light p-1 dark:bg-dark-2">
+                <img src="./assets/images/capcut.jpg" alt="" class="h-12 w-12 rounded-md">
+              </div>
+              <p class="mt-1 text-base font-medium text-dark">
+                Capcut
               </p>
             </div>
           </div>
         </div>
       </div>
 
-      <div class=" bg-white p-6 gap-4 grid shadow rounded-2xl">
-        <div class="flex flex-wrap items-center justify-between gap-2">
-          <h3 class="text-2xl font-semibold dark:text-light">Recent Projects</h3>
-          <a href="portfolio.html"
-            class="inline-flex items-center justify-center gap-2 border-b text-center text-base text-primary transition hover:border-b-primary dark:border-b-muted dark:hover:border-b-primary">
-            <span>All Projects</span>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" stroke="currentColor"
-              stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" class="h-5 w-5">
-              <path d="M4.167 10h11.666m-4.999 5 5-5m-5-5 5 5"></path>
-            </svg>
-          </a>
-        </div>
-
-        <div class="group relative overflow-hidden rounded-lg bg-light p-4 pb-0 dark:bg-dark-2 md:p-6 md:pb-0">
-          <div class="relative aspect-6/4 overflow-hidden rounded-t-lg">
-            <img src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600" alt=""
-              class="h-full w-full rounded-t-lg object-cover object-top transition">
-
-            <a href="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600" data-gall="project-gallry-1"
-              class="project-gallery-link absolute left-1/2 top-1/2 grid h-10 w-10 -translate-x-1/2 -translate-y-1/2 place-content-center rounded-full bg-white text-primary shadow-lg transition lg:invisible lg:-translate-y-[40%] lg:opacity-0 lg:group-hover:visible lg:group-hover:-translate-y-1/2 lg:group-hover:opacity-100 vbox-item">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" stroke="currentColor"
-                stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" class="h-6 w-6">
-                <path d="M10 4.167v11.666M4.167 10h11.666"></path>
-              </svg>
+      <div class=" bg-white p-6 gap-2 grid shadow rounded-2xl">
+        <div class="grid items-start gap-3 overflow-hidden">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <h3 class="text-2xl font-semibold dark:text-light custom-font">Services</h3>
+            <a href="portfolio.html"
+              class="inline-flex items-center justify-center gap-2 border-b text-center text-base text-primary transition hover:border-b-primary dark:border-b-muted dark:hover:border-b-primary">
+              <span>Hire me</span>
+              <span class="material-symbols-outlined">arrow_forward</span>
             </a>
+            <div class="grid gap-3 w-full mt-3">
+              <div class="flex justify-between items-center justify-center border-b py-2 text-2xl hover:text-3xl hover:text-blue-500">
+                <p class=" ">UI/UX Designing</p>
+                <span class="material-symbols-outlined">north_east</span>
+              </div>
+              <div class="flex justify-between items-center justify-center border-b py-2 text-2xl hover:text-3xl hover:text-blue-500">
+                <p class="  ">Branding</p>
+                <span class="material-symbols-outlined">north_east</span>
+              </div>
+              <div class="flex justify-between items-center justify-center border-b py-2 text-2xl hover:text-3xl hover:text-blue-500">
+                <p class="  ">Web Development</p>
+                <span class="material-symbols-outlined">north_east</span>
+              </div>
+              <div class="flex justify-between items-center justify-center border-b py-2 text-2xl hover:text-3xl hover:text-blue-500">
+                <p class="  ">Graphic Designing</p>
+                <span class="material-symbols-outlined">north_east</span>
+              </div>
+              <div class="flex justify-between items-center justify-center border-b py-2 text-2xl hover:text-3xl hover:text-blue-500">
+                <p class="  ">Video Editing</p>
+                <span class="material-symbols-outlined">north_east</span>
+              </div>
+              <div class="flex justify-between items-center justify-center border-b py-2 text-2xl hover:text-3xl hover:text-blue-500">
+                <p class="  ">Mobile App Development</p>
+                <span class="material-symbols-outlined">north_east</span>
+              </div>
+              <div class="flex justify-between items-center justify-center border-b py-2 text-2xl hover:text-3xl hover:text-blue-500">
+                <p class="  ">2D Illustration Works</p>
+                <span class="material-symbols-outlined">north_east</span>
+              </div>
+              <div class="flex justify-between items-center justify-center border-b py-2 text-2xl hover:text-3xl hover:text-blue-500">
+                <p class="  ">UI Developement</p>
+                <span class="material-symbols-outlined">north_east</span>
+              </div>
+            </div>
           </div>
-
-          <div class="absolute inset-x-0 bottom-0 flex flex-wrap gap-2 bg-gradient-to-t from-black/20 p-4">
-            <span class="rounded bg-white px-2 py-1 text-xs font-medium text-primary shadow">
-              Product Design
-            </span>
-          </div>
-        </div>
-
-        <div class="group relative overflow-hidden rounded-lg bg-light p-4 pb-0 dark:bg-dark-2 md:p-6 md:pb-0">
-          <div class="relative aspect-6/4 overflow-hidden rounded-t-lg">
-            <img src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600" alt=""
-              class="h-full w-full rounded-t-lg object-cover object-top transition">
-
-            <a href="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600" data-gall="project-gallry-2"
-              class="project-gallery-link absolute left-1/2 top-1/2 grid h-10 w-10 -translate-x-1/2 -translate-y-1/2 place-content-center rounded-full bg-white text-primary shadow-lg transition lg:invisible lg:-translate-y-[40%] lg:opacity-0 lg:group-hover:visible lg:group-hover:-translate-y-1/2 lg:group-hover:opacity-100 vbox-item">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" stroke="currentColor"
-                stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" class="h-6 w-6">
-                <path d="M10 4.167v11.666M4.167 10h11.666"></path>
-              </svg>
-            </a>
-          </div>
-
-          <div class="absolute inset-x-0 bottom-0 flex flex-wrap gap-2 bg-gradient-to-t from-black/20 p-4">
-            <span class="rounded bg-white px-2 py-1 text-xs font-medium text-primary shadow">
-              Product Design
-            </span>
-          </div>
+          
+          
+          
         </div>
       </div>
 
-      <div class="rounded-2xl bg-white p-6 shadow lg:col-span-2">
+      <div class="rounded-2xl p-6 shadow lg:col-span-2 bg-white flex flex-col justify-around">
         <div class="flex flex-wrap items-center justify-between gap-2">
-          <h3 class="text-2xl font-semibold dark:text-light">Services I Offered</h3>
+          <h3 class="text-2xl font-semibold custom-font">Services I
+            offer
+          </h3>
           <a href="services.html"
             class="inline-flex items-center justify-center gap-2 border-b text-center text-base text-primary transition hover:border-b-primary dark:border-b-muted dark:hover:border-b-primary">
-            <span>See All Services</span>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" stroke="currentColor"
-              stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" class="h-5 w-5">
-              <path d="M4.167 10h11.666m-4.999 5 5-5m-5-5 5 5"></path>
-            </svg>
+            <span>Products i worked</span>
+            <span class="material-symbols-outlined">arrow_forward</span>
           </a>
         </div>
 
-        <div class="mt-6 grid grid-cols-2 gap-6 md:grid-cols-4">
-          <div class="rounded-2xl bg-light p-2 text-center dark:bg-dark-2 md:p-4">
-            <div class="grid place-content-center rounded-lg bg-white p-6 dark:bg-black">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="currentColor"
-                stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                class="h-12 w-12 text-primary lg:h-16 lg:w-16">
-                <path
-                  d="M8 13.333A5.333 5.333 0 0 1 13.333 8h37.334A5.333 5.333 0 0 1 56 13.333v37.334A5.333 5.333 0 0 1 50.667 56H13.333A5.333 5.333 0 0 1 8 50.667V13.333ZM40 8 8 40M25.334 8l-16 16M53.333 9.333 38.667 24M24 40 10.666 53.333">
-                </path>
-                <path d="M56 24H24v32"></path>
-              </svg>
-            </div>
-            <p class="mt-3 text-base font-medium text-dark dark:text-light/70">
-              UI UX Design
-            </p>
+        <div class="bg-scroll grid gap-3 scroll-parent">
+          <div behavior="scroll" direction="left" class="flex scroll-parent-a bg-grey-200 gap-6 flex-row h-14">
+            <img src="" alt="" class="rounded-lg h-14 w-14 inline-flex scroll-element">
+            <img src="" alt="" class="rounded-lg h-14 w-14 inline-flex scroll-element">
+            <img src="" alt="" class="rounded-lg h-14 w-14 inline-flex scroll-element">
+            <img src="" alt="" class="rounded-lg h-14 w-14 inline-flex scroll-element">
+            <img src="" alt="" class="rounded-lg h-14 w-14 inline-flex scroll-element">
+            <img src="" alt="" class="rounded-lg h-14 w-14 inline-flex scroll-element">
+            <img src="" alt="" class="rounded-lg h-14 w-14 inline-flex scroll-element">
+            <img src="" alt="" class="rounded-lg h-14 w-14 inline-flex scroll-element">
+            <img src="" alt="" class="rounded-lg h-14 w-14 inline-flex scroll-element">
+            <img src="" alt="" class="rounded-lg h-14 w-14 inline-flex scroll-element">
+            <img src="" alt="" class="rounded-lg h-14 w-14 inline-flex scroll-element">
+            <img src="" alt="" class="rounded-lg h-14 w-14 inline-flex scroll-element">
+            <img src="" alt=""` class="rounded-lg h-14 w-14 inline-flex scroll-element">
+            <img src="" alt="" class="rounded-lg h-14 w-14 inline-flex scroll-element">
+            <img src="" alt="" class="rounded-lg h-14 w-14 inline-flex scroll-element">
+            <img src="" alt="" class="rounded-lg h-14 w-14 inline-flex scroll-element">
           </div>
-          <div class="rounded-2xl bg-light p-2 text-center dark:bg-dark-2 md:p-4">
-            <div class="grid place-content-center rounded-lg bg-white p-6 dark:bg-black">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="currentColor"
-                stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                class="h-12 w-12 text-primary lg:h-16 lg:w-16">
-                <path
-                  d="M26.666 18.667A5.333 5.333 0 0 1 32 13.333h16a5.333 5.333 0 0 1 5.333 5.334v26.666A5.333 5.333 0 0 1 48 50.667H32a5.333 5.333 0 0 1-5.334-5.334V18.667Zm-8 0v26.666m-8-24v21.334">
-                </path>
-              </svg>
-            </div>
-            <p class="mt-3 text-base font-medium text-dark dark:text-light/70">
-              Mobile App
-            </p>
-          </div>
-          <div class="rounded-2xl bg-light p-2 text-center dark:bg-dark-2 md:p-4">
-            <div class="grid place-content-center rounded-lg bg-white p-6 dark:bg-black">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="currentColor"
-                stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                class="h-12 w-12 text-primary lg:h-16 lg:w-16">
-                <path
-                  d="M10.666 13.333a2.667 2.667 0 0 1 2.667-2.666h37.334a2.667 2.667 0 0 1 2.666 2.666v5.334a2.667 2.667 0 0 1-2.666 2.666H13.332a2.666 2.666 0 0 1-2.667-2.666v-5.334Zm0 21.334A2.667 2.667 0 0 1 13.333 32H24a2.667 2.667 0 0 1 2.666 2.667v16A2.667 2.667 0 0 1 24 53.333H13.333a2.666 2.666 0 0 1-2.667-2.666v-16ZM37.334 32h16m-16 10.667h16m-16 10.666h16">
-                </path>
-              </svg>
-            </div>
-            <p class="mt-3 text-base font-medium text-dark dark:text-light/70">
-              Product Design
-            </p>
-          </div>
-          <div class="rounded-2xl bg-light p-2 text-center dark:bg-dark-2 md:p-4">
-            <div class="grid place-content-center rounded-lg bg-white p-6 dark:bg-black">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="currentColor"
-                stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                class="h-12 w-12 text-primary lg:h-16 lg:w-16">
-                <path
-                  d="M36.214 36.773a15.982 15.982 0 0 1 1.12 5.894A15.86 15.86 0 0 1 32 54.56a15.814 15.814 0 0 1-10.666 4.107c-8.827 0-16-7.174-16-16 0-7.36 5.013-13.6 11.786-15.44">
-                </path>
-                <path
-                  d="M46.88 27.227c6.773 1.84 11.787 8.08 11.787 15.44 0 8.826-7.174 16-16 16A15.814 15.814 0 0 1 32 54.56">
-                </path>
-                <path d="M16 21.333a16 16 0 1 0 32 0 16 16 0 0 0-32 0Z"></path>
-              </svg>
-            </div>
-            <p class="mt-3 text-base font-medium text-dark dark:text-light/70">
-              Branding
-            </p>
+          <div behavior="scroll" direction="right" class="flex scroll-parent-a bg-grey-200 gap-6 flex-row">
+            <img src="" alt="" class="rounded-lg h-14 w-14 inline-flex scroll-element">
+            <img src="" alt="" class="rounded-lg h-14 w-14 inline-flex scroll-element">
+            <img src="" alt="" class="rounded-lg h-14 w-14 inline-flex scroll-element">
+            <img src="" alt="" class="rounded-lg h-14 w-14 inline-flex scroll-element">
+            <img src="" alt="" class="rounded-lg h-14 w-14 inline-flex scroll-element">
+            <img src="" alt="" class="rounded-lg h-14 w-14 inline-flex scroll-element">
+            <img src="" alt="" class="rounded-lg h-14 w-14 inline-flex scroll-element">
+            <img src="" alt="" class="rounded-lg h-14 w-14 inline-flex scroll-element">
+            <img src="" alt="" class="rounded-lg h-14 w-14 inline-flex scroll-element">
+            <img src="" alt="" class="rounded-lg h-14 w-14 inline-flex scroll-element">
+            <img src="" alt="" class="rounded-lg h-14 w-14 inline-flex scroll-element">
+            <img src="" alt="" class="rounded-lg h-14 w-14 inline-flex scroll-element">
+            <img src="" alt="" class="rounded-lg h-14 w-14 inline-flex scroll-element">
+            <img src="" alt="" class="rounded-lg h-14 w-14 inline-flex scroll-element">
+            <img src="" alt="" class="rounded-lg h-14 w-14 inline-flex scroll-element">
+            <img src="" alt="" class="rounded-lg h-14 w-14 inline-flex scroll-element">
           </div>
         </div>
+      
       </div>
       <div class="rounded-2xl bg-white p-6 shadow">
         <marquee behavior="scroll" direction="left"
-          class="overflow-hidden text-nowrap rounded-lg bg-light p-3 text-lg font-medium text-muted dark:bg-dark-2">
+          class="overflow-hidden text-nowrap rounded-lg bg-light pb-3 text-lg font-medium text-muted">
           Available For Hire 🚀 Crafting Digital Experiences 🎨 Available For Hire 🚀
           Crafting Digital Experiences 🎨
         </marquee>
 
-        <h2 class="mt-4 text-[40px] font-semibold leading-snug text-dark dark:text-light">
+        <h2 class=" text-[40px] font-semibold leading-snug text-dark">
           Let's👋 <br>
           Work Together
         </h2>
 
         <a href="contact.html"
-          class="mt-6 inline-flex items-center justify-center gap-2 border-b text-center text-base text-primary transition hover:border-b-primary dark:border-b-muted dark:hover:border-b-primary">
+          class="mt-3 inline-flex items-center justify-center gap-2 border-b text-center text-base text-primary transition hover:border-b-primary dark:border-b-muted dark:hover:border-b-primary">
           <span>Let's Talk</span>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" stroke="currentColor"
-            stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" class="h-5 w-5">
-            <path d="M17.5 11.667v-5h-5"></path>
-            <path d="m17.5 6.667-7.5 7.5-7.5-7.5"></path>
-          </svg>
+          <span class="material-symbols-outlined">north_east</span>
         </a>
       </div>
     </div>
