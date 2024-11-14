@@ -177,6 +177,7 @@ body {
   /* 1 */
   line-height: inherit;
   /* 2 */
+  scroll-behavior: smooth;
 }
 
 /*
