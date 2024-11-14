@@ -4,19 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sunil Kumar | Projects</title>
+    <title>Sunil Kumar | About Me</title>
     <link href="./output.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Lexend:wght@100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .custom-font {
+            font-family: "Lexend", sans-serif;
+        }
+
+        @media screen and (max-width: 768px) {
+            main>div {
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    </style>
 
 </head>
 
-<body class="p-6 lg:p-0">
+<body class="mx-auto pt-6">
 
     <header
-        class="flex flex-wrap sm:justify-start sm:flex-nowrap w-full bg-white text-sm py-3 bg-white shadow w-50 lg:container mx-auto lg:mt-6 rounded-2xl">
+        class="flex flex-wrap sm:justify-start sm:flex-nowrap w-full bg-white text-sm py-3 bg-white shadow w-50 lg:container mx-auto  rounded-2xl">
         <nav class="max-w-[85rem] w-full mx-auto px-4 flex flex-wrap basis-full items-center justify-between">
-            <a class="sm:order-1 flex-none text-2xl font-semibold  focus:outline-none focus:opacity-80" href="#">Hi I'm
+            <a class="sm:order-1 flex-none text-2xl font-semibold  focus:outline-none focus:opacity-80 custom-font"
+                href="#">Hi I'm
                 Sunil</a>
             <div class="sm:order-3 flex items-center gap-x-2">
                 <button type="button"
@@ -46,14 +67,14 @@
             <div id="hs-navbar-alignment"
                 class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:grow-0 sm:basis-auto sm:block sm:order-2"
                 aria-labelledby="hs-navbar-alignment-collapse">
-                <div class="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:mt-0 sm:ps-5">
-                    <a class="font-medium text-base text-gray-400 hover:text-gray-600 focus:outline-none focus:text-gray-400"
+                <div class="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:mt-0 custom-font sm:ps-5 ">
+                    <a class="font-medium text-lg text-gray-400 hover:text-gray-600 focus:text-gray-400 focus:outline-none "
                         href="index.html" aria-current="page">Home</a>
-                    <a class="font-medium text-base text-gray-400 hover:text-gray-600 focus:outline-none focus:text-gray-400"
-                        href="about.html">About</a>
-                    <a class="font-medium text-base text-blue-500 focus:outline-none" href="projects.html">Projects</a>
-                    <a class="font-medium text-base text-gray-400 hover:text-gray-600 focus:outline-none focus:text-gray-400"
-                        href="projects.html">Contact</a>
+                    <a class="font-medium text-lg   text-blue-500  focus:outline-none" href="about.html">About</a>
+                    <a class="font-medium text-lg text-gray-400 hover:text-gray-600 focus:outline-none focus:text-gray-400"
+                        href="projects.html">Projects</a>
+                    <a class="font-medium text-lg text-gray-400 hover:text-gray-600 focus:outline-none focus:text-gray-400"
+                        href="contact.html">Contact</a>
 
                 </div>
             </div>
@@ -62,33 +83,68 @@
 
     <main class="container mx-auto my-6 lg:h-[92vh] lg:overflow-hidden">
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 h-full">
-            <div class=" bg-white p-6 grid border shadow-sm rounded-2xl gap-3 h-fit">
-                <img src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600" class="" alt="image">
-                <div>
-                    <h1 class="text-2xl font-bold">V Sunil Kumar</h1>
-                    <p class="text-base font-light mt-1">I am <span class="font-semibold">UI/UX Designer</span> & <spanit
-                            class="font-semibold">Front
-                            End Developer</span> with enhanced skills in Graphic Designing, Video Editing & Web
-                            Designing</p>
-                </div>
-                <div class="flex gap-2">
-                    <button class="lg:w-6/12 lg:p-1 h-11 w-11/12 border shadow-sm p-2 text-lg rounded-md"
-                        type="button">Hire
-                        me</button>
-                    <button
-                        class="lg:w-6/12 lg:p-1 h-11 w-11/12 bg-blue-500 text-white border shadow-sm p-2 text-lg rounded-md"
-                        type="button">Resume</button>
-                </div>
-                <div class="flex gap-1">
-                    <div class="h-8 w-8 rounded-md border"></div>
-                    <div class="h-8 w-8 rounded-md border"></div>
-                    <div class="h-8 w-8 rounded-md border"></div>
-                    <div class="h-8 w-8 rounded-md border"></div>
+            <div class="bg-white p-6 grid gap-3 shadow rounded-2xl">
+                <div class=" flex flex-col gap-6 ">
+                    <img src="./assets/images/hero.jpg" class="w-full rounded-lg" alt="">
+                    <div>
+                        <h1 class="text-3xl font-bold  custom-font">V Sunil Kumar 🍃👋</h1>
+                        <p class="text-lg font-normal mt-1">I am <span class="font-bold  mark h-1 ">UI/UX
+                                Designer</span> & <span class="font-bold  mark h-1">Front
+                                End Developer</span> with enhanced skills in Graphic Designing, Video Editing & 2D
+                            Illustation Arts</p>
+                    </div>
+                    <div class="flex gap-2">
+                        <button
+                            class="lg:w-6/12 lg:p-1 h-14 w-11/12 border items-center justify-center flex gap-1 shadow-sm p-2 text-lg font-semibold rounded-md"
+                            type="button">Hire
+                            me <span class="material-symbols-outlined">message</span> </button>
+                        <button
+                            class="lg:w-6/12 lg:p-1 h-14 w-11/12 bg-blue-500 text-white border items-center justify-center flex gap-1 shadow-sm p-2 text-lg font-semibold rounded-md"
+                            type="button">Resume <span class="material-symbols-outlined">download</span> </button>
+                    </div>
+                    <div class="flex gap-3">
+                        <a href="https://github.com/safikumar00">
+                            <div
+                                class="p-2 border shadow-sm rounded-md w-12 h-12 grid items-center justify-center text-center">
+                                <i class="social-links fa fa-github"></i>
+                            </div>
+                        </a>
+                        <a href="https://codepen.io/safikumar00">
+                            <div
+                                class="p-2 border shadow-sm rounded-md w-12 h-12 grid items-center justify-center text-center">
+                                <i class="social-links fa fa-codepen"></i>
+
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/sunil-kumar-ab0a9b24b/">
+                            <div
+                                class="p-2 border shadow-sm rounded-md w-12 h-12 grid items-center justify-center text-center">
+                                <i class="social-links fa fa-linkedin"></i>
+
+                            </div>
+                        </a>
+                        <a href="https://www.behance.net/8fc59bees">
+                            <div
+                                class="p-2 border shadow-sm rounded-md w-12 h-12 grid items-center justify-center text-center">
+                                <i class="social-links fa fa-behance"></i>
+
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div
-                class=" bg-white grid border rounded-2xl grid-rows-2 col-span-2 gap-6 lg:overflow-y-scroll overflow-x-hidden overflow-y-scroll [&::-webkit-scrollbar]:w-1 [&::-webkit-scrollbar-track]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-gray-300">
-                <div class="bg-white p-6 gap-6 grid shadow rounded-2xl h-fit">
+                class=" bg-white text-center grid border items-center justify-center h-full rounded-2xl col-span-2 gap-6 lg:overflow-y-scroll overflow-x-hidden overflow-y-scroll [&::-webkit-scrollbar]:w-1 [&::-webkit-scrollbar-track]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-gray-300">
+                <div class="flex flex-col gap-6 items-center justify-center">
+                    <h1 class="text-2xl font-semibold">Working on it, kindly please visit later</h1>
+                    <button type="submit"
+                        class="inline-flex w-1/2 mt-2 text-lg items-center rounded-md justify-center gap-x-2 rounded-mdpx-3 py-2 text-center bg-blue-500 font-medium text-white transition hover:bg-gray-900 hover:text-white  focus:outline-none focus:ring disabled:pointer-events-none disabled:opacity-50"
+                        fdprocessedid="4td797">
+                        <span class="text-lg">Back to home</span>
+                        <span class="material-symbols-outlined">home</span>
+                    </button>
+                </div>
+                <!-- <div class="bg-white p-6 gap-6 grid shadow rounded-2xl h-fit">
                     <div class="flex flex-col-reverse items-start gap-6 lg:flex-row lg:gap-10">
                         <div class="">
                             <h2 class="text-2xl font-semibold text-dark">
@@ -223,7 +279,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </main>
