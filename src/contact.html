@@ -36,7 +36,7 @@
         class="flex flex-wrap sm:justify-start sticky top-0 h-fit sm:flex-nowrap w-full bg-white text-sm py-3 shadow w-50 lg:container mx-auto  rounded-2xl">
         <nav class="max-w-[85rem] w-full relative mx-auto px-4 flex flex-wrap basis-full items-center justify-between">
             <a class="sm:order-1 flex-none text-xl lg:text-2xl font-semibold  focus:outline-none focus:opacity-80 custom-font"
-                href="#">Hi I'm
+                href="index.html">Hi I'm
                 Sunil</a>
             <div class="sm:order-3 flex items-center gap-x-2">
                 <div class="py-2 px-3 menu border rounded-md lg:hidden md:hidden cursor-pointer">
@@ -77,12 +77,13 @@
                             Illustation Arts</p>
                     </div>
                     <div class="flex gap-2">
+                        <a href="https://wa.me/8790549591" target="_blank"
+                            class="lg:w-6/12 lg:p-1 h-12 border-green-400 bg-green-100  text-green-600 hover:bg-green-300 hover:text-green-800 hover:border-green-500 lg:h-14 w-11/12 border items-center justify-center flex gap-1 shadow-sm p-2 text-lg font-semibold rounded-md">
+                            WhatsApp <i class="bi bi-whatsapp"></i>
+                        </a>
+
                         <button
-                            class="lg:w-6/12 lg:p-1 h-12 lg:h-14 w-11/12 border contact_location items-center justify-center flex gap-1 shadow-sm p-2 text-lg font-semibold rounded-md"
-                            type="button">Hire
-                            me <span class="material-symbols-outlined">message</span> </button>
-                        <button
-                            class="lg:w-6/12 lg:p-1 h-12 lg:h-14 w-11/12 bg-blue-500 text-white border resume_download items-center justify-center flex gap-1 shadow-sm p-2 text-lg font-semibold rounded-md"
+                            class="lg:w-6/12 lg:p-1 h-12 lg:h-14 w-11/12 border-blue-500 bg-blue-100 text-blue-500 hover:bg-blue-300 hover:text-blue-800 hover:border-blue-500 border resume_download items-center justify-center flex gap-1 shadow-sm p-2 text-lg font-semibold rounded-md"
                             type="button">Resume <span class="material-symbols-outlined">download</span> </button>
                     </div>
                     <div class="flex gap-3">
@@ -132,8 +133,13 @@
                         </div>
                     </div>
                     <div class="w-full flex flex-wrap gap-3">
-                        <button class="lg:p-1 h-11 w-full lg:w-40 border border-black shadow p-2  text-lg rounded-md"
-                            type="button"> <i class="bi bi-telephone-fill px-1 text-gray-900"></i> 8790549591</button>
+                        <a href="tel:8790549591">
+                            <button class="lg:p-1 h-11 w-full lg:w-40 border border-black shadow p-2 text-lg rounded-md"
+                                type="button">
+                                <i class="bi bi-telephone-fill px-1 text-gray-900"></i> 8790549591
+                            </button>
+                        </a>
+
                         <input type="text" id="emailAddress" value="sk16331ee059@mail.com" readonly hidden>
 
                         <button
@@ -146,13 +152,14 @@
                     <hr>
                     <div class="grid grid-flow-col-1 lg:grid-cols-2">
 
-                        <form action="">
+                        <form action="form.php" method="POST">
                             <div class="grid grid-cols-1 gap-3">
                                 <div class="">
                                     <label for="name" class="mb-2 block text-sm font-medium text-dark">
                                         Name
                                     </label>
-                                    <input required="" type="text" id="name" name="name" placeholder="Enter your name"
+                                    <input required="true" type="text" id="name" aria-required="true" name="name"
+                                        placeholder="Enter your name"
                                         class="block w-full rounded-md border border-gray-400 bg-white px-3 py-2 text-base outline-none transition focus:border-dark focus:ring focus:ring-dark/20 disabled:pointer-events-none disabled:opacity-50"
                                         fdprocessedid="dtl74">
                                 </div>
@@ -160,7 +167,7 @@
                                     <label for="email" class="mb-2 block text-sm font-medium text-dark">
                                         Email
                                     </label>
-                                    <input required="" type="email" id="email" name="email"
+                                    <input required="true" type="email" id="email" name="email" aria-required="true"
                                         placeholder="Enter your email"
                                         class="block w-full rounded-md border border-gray-400 bg-white px-3 py-2 text-base outline-none transition focus:border-dark focus:ring focus:ring-dark/20 disabled:pointer-events-none disabled:opacity-50"
                                         fdprocessedid="xr6rz">
@@ -169,7 +176,8 @@
                                     <label for="subject" class="mb-2 block text-sm font-medium text-dark">
                                         Subject
                                     </label>
-                                    <input required="" type="text" id="subject" name="subject" placeholder="Subject"
+                                    <input required="true" type="text" id="subject" name="subject" placeholder="Subject"
+                                        aria-required="true"
                                         class="block w-full rounded-md border border-gray-400 bg-white px-3 py-2 text-base outline-none transition focus:border-dark focus:ring focus:ring-dark/20 disabled:pointer-events-none disabled:opacity-50"
                                         fdprocessedid="tdkfwt">
                                 </div>
@@ -235,7 +243,7 @@
 
                 // Update the button's text to indicate success
                 const successMessage = document.querySelector(".copy_mail"); // Ensure this class exists on the button
-                successMessage.innerHTML = "<i class='bi bi-checkmark px-1 text-green-400'></i> Copied!";
+                successMessage.innerHTML = "<i class='bi bi-check-circle-fill px-1 text-green-400'></i> Copied!";
 
                 // Reset the button text after 3 seconds
                 setTimeout(() => {

@@ -15,7 +15,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Lexend:wght@100..900&display=swap"
         rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
     <style>
         .custom-font {
             font-family: "Lexend", sans-serif;
@@ -41,14 +40,14 @@
         class="flex flex-wrap sm:justify-start sticky top-0 h-fit sm:flex-nowrap w-full bg-white text-sm py-3 shadow w-50 lg:container mx-auto  rounded-2xl">
         <nav class="max-w-[85rem] w-full relative mx-auto px-4 flex flex-wrap basis-full items-center justify-between">
             <a class="sm:order-1 flex-none text-xl lg:text-2xl font-semibold  focus:outline-none focus:opacity-80 custom-font"
-                href="#">Hi I'm
+                href="index.html">Hi I'm
                 Sunil</a>
             <div class="sm:order-3 flex items-center gap-x-2">
                 <div class="py-2 px-3 menu border rounded-md lg:hidden md:hidden cursor-pointer">
                     <i class="fa fa-bars text-md"></i>
                 </div>
                 <button type="button"
-                    class="py-2 px-8 inline-flex items-center gap-x-2 text-base font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-700 dark:focus:bg-neutral-700">
+                    class="py-2 px-8 inline-flex items-center contact_location gap-x-2 text-base font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-700 dark:focus:bg-neutral-700">
                     Hire Me
                 </button>
             </div>
@@ -83,12 +82,13 @@
                             Illustation Arts</p>
                     </div>
                     <div class="flex gap-2">
+                        <a href="https://wa.me/8790549591" target="_blank"
+                            class="lg:w-6/12 lg:p-1 h-12 border-green-400 bg-green-100  text-green-600 hover:bg-green-300 hover:text-green-800 hover:border-green-500 lg:h-14 w-11/12 border items-center justify-center flex gap-1 shadow-sm p-2 text-lg font-semibold rounded-md">
+                            WhatsApp <i class="bi bi-whatsapp"></i>
+                        </a>
+
                         <button
-                            class="lg:w-6/12 lg:p-1 h-12 lg:h-14 w-11/12 border contact_location items-center justify-center flex gap-1 shadow-sm p-2 text-lg font-semibold rounded-md"
-                            type="button">Hire
-                            me <span class="material-symbols-outlined">message</span> </button>
-                        <button
-                            class="lg:w-6/12 lg:p-1 h-12 lg:h-14 w-11/12 bg-blue-500 text-white border resume_download items-center justify-center flex gap-1 shadow-sm p-2 text-lg font-semibold rounded-md"
+                            class="lg:w-6/12 lg:p-1 h-12 lg:h-14 w-11/12 border-blue-500 bg-blue-100 text-blue-500 hover:bg-blue-300 hover:text-blue-800 hover:border-blue-500 border resume_download items-center justify-center flex gap-1 shadow-sm p-2 text-lg font-semibold rounded-md"
                             type="button">Resume <span class="material-symbols-outlined">download</span> </button>
                     </div>
                     <div class="flex gap-3">
@@ -121,7 +121,7 @@
             </div>
             <div
                 class=" bg-white grid border rounded-2xl col-span-2 h-fit lg:h-auto gap-6 lg:overflow-y-scroll overflow-x-hidden overflow-y-scroll [&::-webkit-scrollbar]:w-1 [&::-webkit-scrollbar-track]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-gray-300">
-                <div class="bg-white p-6 gap-6 grid shadow rounded-2xl h-fit">
+                <div class="bg-white p-6 gap-12 grid shadow rounded-2xl h-fit">
                     <div class="flex flex-col-reverse items-start gap-6 lg:flex-row lg:gap-10">
                         <div class="">
                             <h2 class="text-2xl font-bold text-dark">
@@ -143,59 +143,35 @@
                         <h3 class="text-2xl font-bold text-dark ">
                             Tools I Use
                         </h3>
-                        <div class="grid grid-cols-1
-                         lg:grid-cols-1 flex-wrap w-full gap-6 ">
-                            <div class="flex gap-2 justify-center flex-col  rounded-2xl">
-                                <p class="text-lg font-semibold text-gray-500">Video Editing Tools</p>
-                                <hr class="w-full">
-                                <div class="flex gap-3 "><img src="./assets/images/tools/after_effects.jpg"
-                                        class="h-10 w-10 shadow-sm border rounded-lg" alt="" title="After Effects">
-                                    <img src="./assets/images/tools/capcut.jpg"
-                                        class="h-10 w-10 shadow-sm border rounded-lg" alt="" title="Capcut">
-                                </div>
-                            </div>
-                            <div class="flex gap-2 justify-center flex-col rounded-2xl">
-                                <p class="text-lg font-semibold text-gray-500">Web Design Tools</p>
-                                <hr class="w-full">
-                                <div class="flex gap-3  ">
-                                    <img src="./assets/images/tools/figma.jpg"
-                                        class="h-10 w-10 shadow-sm border rounded-lg" alt="" title="Figma">
-                                    <img src="./assets/images/tools/balasmiq.jpg"
-                                        class="h-10 w-10 shadow-sm border rounded-lg" alt="" title="Balasmiq">
-                                </div>
-                            </div>
-                            <div class="flex gap-2  flex-col  rounded-2xl">
-                                <p class="text-lg font-semibold text-gray-500">Graphic Design Tools</p>
-                                <hr class="w-full">
-                                <div class="flex gap-3 ">
-                                    <img src="./assets/images/tools/photoshop.jpg"
-                                        class="h-10 w-10 shadow-sm border rounded-lg" alt="" title="Photoshop">
-                                    <img src="./assets/images/tools/illustrator.jpg"
-                                        class="h-10 w-10 shadow-sm border rounded-lg" alt="" title="Illustrator">
-                                    <img src="./assets/images/tools/canva.jpg"
-                                        class="h-10 w-10 shadow-sm border rounded-lg" alt="" title="Canva">
-                                </div>
-                            </div>
-                            <div class="flex gap-2 justify-center flex-col  rounded-2xl">
-                                <p class="text-lg font-semibold text-gray-500">Web Development Tools</p>
-                                <hr class="w-full">
-                                <div class="flex flex-wrap gap-3   ">
-                                    <img src="./assets/images/tools/html_logo.jpg" class="h-10 w-10  rounded-lg" alt=""
-                                        title="HTML">
-                                    <img src="./assets/images/tools/css_logo.svg" class="h-10 w-10  rounded-lg" alt=""
-                                        title="CSS">
-                                    <img src="./assets/images/tools/js_logo.jpg"
-                                        class="h-10 w-10 shadow-sm border rounded-lg" alt="" title="JavaScript">
-                                    <img src="./assets/images/tools/tailwindcsss.jpg"
-                                        class="h-10 w-10 shadow-sm border rounded-lg" alt="" title="TailwindCSS">
-                                    <img src="./assets/images/tools/Bootstrap_logo.jpg"
-                                        class="h-10 w-10 shadow-sm border rounded-lg" alt="" title="Bootstrap">
-                                    <img src="./assets/images/tools/jquery_logo.jpg" class="h-10 w-10   rounded-lg"
-                                        alt="" title="jQuery">
-                                    <img src="./assets/images/tools/vscode.jpg" class="h-10 w-10   rounded-lg" alt=""
-                                        title="Visual Studio Code">
-                                </div>
-                            </div>
+                        <div class="flex flex-wrap w-full gap-6">
+                            <img src="./assets/images/tools/after_effects.jpg"
+                                class="h-10 w-10 shadow-sm border rounded-lg" alt="" title="After Effects">
+                            <img src="./assets/images/tools/capcut.jpg" class="h-10 w-10 shadow-sm border rounded-lg"
+                                alt="" title="Capcut">
+                            <img src="./assets/images/tools/figma.jpg" class="h-10 w-10 shadow-sm border rounded-lg"
+                                alt="" title="Figma">
+                            <img src="./assets/images/tools/balasmiq.jpg" class="h-10 w-10 shadow-sm border rounded-lg"
+                                alt="" title="Balasmiq">
+                            <img src="./assets/images/tools/photoshop.jpg" class="h-10 w-10 shadow-sm border rounded-lg"
+                                alt="" title="Photoshop">
+                            <img src="./assets/images/tools/illustrator.jpg"
+                                class="h-10 w-10 shadow-sm border rounded-lg" alt="" title="Illustrator">
+                            <img src="./assets/images/tools/canva.jpg" class="h-10 w-10 shadow-sm border rounded-lg"
+                                alt="" title="Canva">
+                            <img src="./assets/images/tools/html_logo.jpg" class="h-10 w-10  rounded-lg" alt=""
+                                title="HTML">
+                            <img src="./assets/images/tools/css_logo.svg" class="h-10 w-10  rounded-lg" alt=""
+                                title="CSS">
+                            <img src="./assets/images/tools/js_logo.jpg" class="h-10 w-10 shadow-sm border rounded-lg"
+                                alt="" title="JavaScript">
+                            <img src="./assets/images/tools/tailwindcsss.jpg"
+                                class="h-10 w-10 shadow-sm border rounded-lg" alt="" title="TailwindCSS">
+                            <img src="./assets/images/tools/Bootstrap_logo.jpg"
+                                class="h-10 w-10 shadow-sm border rounded-lg" alt="" title="Bootstrap">
+                            <img src="./assets/images/tools/jquery_logo.jpg" class="h-10 w-10   rounded-lg" alt=""
+                                title="jQuery">
+                            <img src="./assets/images/tools/vscode.jpg" class="h-10 w-10   rounded-lg" alt=""
+                                title="Visual Studio Code">
                         </div>
                     </div>
 
