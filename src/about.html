@@ -21,6 +21,10 @@
             font-family: "Lexend", sans-serif;
         }
 
+        .service_li {
+            cursor: pointer;
+        }
+
         @media screen and (max-width: 768px) {
             main>div {
                 justify-content: center;
@@ -34,31 +38,15 @@
 <body class="mx-auto pt-6">
 
     <header
-        class="flex flex-wrap sm:justify-start sm:flex-nowrap w-full bg-white text-sm py-3 bg-white shadow w-50 lg:container mx-auto  rounded-2xl">
-        <nav class="max-w-[85rem] w-full mx-auto px-4 flex flex-wrap basis-full items-center justify-between">
-            <a class="sm:order-1 flex-none text-2xl font-semibold  focus:outline-none focus:opacity-80 custom-font"
+        class="flex flex-wrap sm:justify-start sticky top-0 h-fit sm:flex-nowrap w-full bg-white text-sm py-3 shadow w-50 lg:container mx-auto  rounded-2xl">
+        <nav class="max-w-[85rem] w-full relative mx-auto px-4 flex flex-wrap basis-full items-center justify-between">
+            <a class="sm:order-1 flex-none text-xl lg:text-2xl font-semibold  focus:outline-none focus:opacity-80 custom-font"
                 href="#">Hi I'm
                 Sunil</a>
             <div class="sm:order-3 flex items-center gap-x-2">
-                <button type="button"
-                    class="sm:hidden hs-collapse-toggle relative size-7 flex justify-center items-center gap-x-2 rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-transparent dark:border-neutral-700 dark:text-white dark:hover:bg-white/10 dark:focus:bg-white/10"
-                    id="hs-navbar-alignment-collapse" aria-expanded="false" aria-controls="hs-navbar-alignment"
-                    aria-label="Toggle navigation" data-hs-collapse="#hs-navbar-alignment">
-                    <svg class="hs-collapse-open:hidden shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24"
-                        height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <line x1="3" x2="21" y1="6" y2="6" />
-                        <line x1="3" x2="21" y1="12" y2="12" />
-                        <line x1="3" x2="21" y1="18" y2="18" />
-                    </svg>
-                    <svg class="hs-collapse-open:block hidden shrink-0 size-4" xmlns="http://www.w3.org/2000/svg"
-                        width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M18 6 6 18" />
-                        <path d="m6 6 12 12" />
-                    </svg>
-                    <span class="sr-only">Toggle</span>
-                </button>
+                <div class="py-2 px-3 menu border rounded-md lg:hidden md:hidden cursor-pointer">
+                    <i class="fa fa-bars text-md"></i>
+                </div>
                 <button type="button"
                     class="py-2 px-8 inline-flex items-center gap-x-2 text-base font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-700 dark:focus:bg-neutral-700">
                     Hire Me
@@ -68,9 +56,9 @@
                 class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:grow-0 sm:basis-auto sm:block sm:order-2"
                 aria-labelledby="hs-navbar-alignment-collapse">
                 <div class="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:mt-0 custom-font sm:ps-5 ">
-                    <a class="font-medium text-lg text-gray-400 hover:text-gray-600 focus:text-gray-400 focus:outline-none "
+                    <a class="font-medium text-lg  text-gray-400 hover:text-gray-600 focus:text-gray-400 focus:outline-none "
                         href="index.html" aria-current="page">Home</a>
-                    <a class="font-medium text-lg   text-blue-500  focus:outline-none" href="about.html">About</a>
+                    <a class="font-medium text-lg  text-blue-500 focus:outline-none" href="about.html">About</a>
                     <a class="font-medium text-lg text-gray-400 hover:text-gray-600 focus:outline-none focus:text-gray-400"
                         href="projects.html">Projects</a>
                     <a class="font-medium text-lg text-gray-400 hover:text-gray-600 focus:outline-none focus:text-gray-400"
@@ -80,6 +68,7 @@
             </div>
         </nav>
     </header>
+
 
     <main class="container mx-auto my-6 lg:h-[92vh] lg:overflow-hidden">
         <div class="lg:grid flex flex-col grid-cols-3 gap-6 h-full">
@@ -95,37 +84,34 @@
                     </div>
                     <div class="flex gap-2">
                         <button
-                            class="lg:w-6/12 lg:p-1 h-14 w-11/12 border items-center justify-center flex gap-1 shadow-sm p-2 text-lg font-semibold rounded-md"
+                            class="lg:w-6/12 lg:p-1 h-12 lg:h-14 w-11/12 border contact_location items-center justify-center flex gap-1 shadow-sm p-2 text-lg font-semibold rounded-md"
                             type="button">Hire
                             me <span class="material-symbols-outlined">message</span> </button>
                         <button
-                            class="lg:w-6/12 lg:p-1 h-14 w-11/12 bg-blue-500 text-white border items-center justify-center flex gap-1 shadow-sm p-2 text-lg font-semibold rounded-md"
+                            class="lg:w-6/12 lg:p-1 h-12 lg:h-14 w-11/12 bg-blue-500 text-white border resume_download items-center justify-center flex gap-1 shadow-sm p-2 text-lg font-semibold rounded-md"
                             type="button">Resume <span class="material-symbols-outlined">download</span> </button>
                     </div>
                     <div class="flex gap-3">
-                        <a href="https://github.com/safikumar00">
-                            <div
-                                class="p-2 border shadow-sm rounded-md w-12 h-12 grid items-center justify-center text-center">
+                        <a href="https://github.com/safikumar00" target="_blank" rel="noopener noreferrer">
+                            <div class="p-2 border rounded-md w-12 h-12 grid items-center justify-center text-center">
                                 <i class="social-links fa fa-github"></i>
                             </div>
                         </a>
-                        <a href="https://codepen.io/safikumar00">
-                            <div
-                                class="p-2 border shadow-sm rounded-md w-12 h-12 grid items-center justify-center text-center">
+                        <a href="https://codepen.io/safikumar00" target="_blank" rel="noopener noreferrer">
+                            <div class="p-2 border rounded-md w-12 h-12 grid items-center justify-center text-center">
                                 <i class="social-links fa fa-codepen"></i>
 
                             </div>
                         </a>
-                        <a href="https://www.linkedin.com/in/sunil-kumar-ab0a9b24b/">
-                            <div
-                                class="p-2 border shadow-sm rounded-md w-12 h-12 grid items-center justify-center text-center">
+                        <a href="https://www.linkedin.com/in/sunil-kumar-ab0a9b24b/" target="_blank"
+                            rel="noopener noreferrer">
+                            <div class="p-2 border rounded-md w-12 h-12 grid items-center justify-center text-center">
                                 <i class="social-links fa fa-linkedin"></i>
 
                             </div>
                         </a>
-                        <a href="https://www.behance.net/8fc59bees">
-                            <div
-                                class="p-2 border shadow-sm rounded-md w-12 h-12 grid items-center justify-center text-center">
+                        <a href="https://www.behance.net/8fc59bee" target="_blank" rel="noopener noreferrer">
+                            <div class="p-2 border rounded-md w-12 h-12 grid items-center justify-center text-center">
                                 <i class="social-links fa fa-behance"></i>
 
                             </div>
@@ -158,55 +144,55 @@
                             Tools I Use
                         </h3>
                         <div class="grid grid-cols-1
-                         lg:grid-cols-2 flex-wrap w-full gap-6 ">
-                            <div class="flex gap-3 p-4   justify-center flex-col border rounded-2xl">
+                         lg:grid-cols-1 flex-wrap w-full gap-6 ">
+                            <div class="flex gap-2 justify-center flex-col  rounded-2xl">
                                 <p class="text-lg font-semibold text-gray-500">Video Editing Tools</p>
                                 <hr class="w-full">
                                 <div class="flex gap-3 "><img src="./assets/images/tools/after_effects.jpg"
-                                        class="h-14 w-14 shadow-sm border rounded-xl" alt="" title="After Effects">
+                                        class="h-10 w-10 shadow-sm border rounded-lg" alt="" title="After Effects">
                                     <img src="./assets/images/tools/capcut.jpg"
-                                        class="h-14 w-14 shadow-sm border rounded-xl" alt="" title="Capcut">
+                                        class="h-10 w-10 shadow-sm border rounded-lg" alt="" title="Capcut">
                                 </div>
                             </div>
-                            <div class="flex gap-3 p-4   justify-center flex-col border rounded-2xl">
+                            <div class="flex gap-2 justify-center flex-col rounded-2xl">
                                 <p class="text-lg font-semibold text-gray-500">Web Design Tools</p>
                                 <hr class="w-full">
                                 <div class="flex gap-3  ">
                                     <img src="./assets/images/tools/figma.jpg"
-                                        class="h-14 w-14 shadow-sm border rounded-xl" alt="" title="Figma">
+                                        class="h-10 w-10 shadow-sm border rounded-lg" alt="" title="Figma">
                                     <img src="./assets/images/tools/balasmiq.jpg"
-                                        class="h-14 w-14 shadow-sm border rounded-xl" alt="" title="Balasmiq">
+                                        class="h-10 w-10 shadow-sm border rounded-lg" alt="" title="Balasmiq">
                                 </div>
                             </div>
-                            <div class="flex gap-3 p-4    flex-col border rounded-2xl">
+                            <div class="flex gap-2  flex-col  rounded-2xl">
                                 <p class="text-lg font-semibold text-gray-500">Graphic Design Tools</p>
                                 <hr class="w-full">
                                 <div class="flex gap-3 ">
                                     <img src="./assets/images/tools/photoshop.jpg"
-                                        class="h-14 w-14 shadow-sm border rounded-xl" alt="" title="Photoshop">
+                                        class="h-10 w-10 shadow-sm border rounded-lg" alt="" title="Photoshop">
                                     <img src="./assets/images/tools/illustrator.jpg"
-                                        class="h-14 w-14 shadow-sm border rounded-xl" alt="" title="Illustrator">
+                                        class="h-10 w-10 shadow-sm border rounded-lg" alt="" title="Illustrator">
                                     <img src="./assets/images/tools/canva.jpg"
-                                        class="h-14 w-14 shadow-sm border rounded-xl" alt="" title="Canva">
+                                        class="h-10 w-10 shadow-sm border rounded-lg" alt="" title="Canva">
                                 </div>
                             </div>
-                            <div class="flex gap-3 p-4   justify-center flex-col border rounded-2xl">
+                            <div class="flex gap-2 justify-center flex-col  rounded-2xl">
                                 <p class="text-lg font-semibold text-gray-500">Web Development Tools</p>
                                 <hr class="w-full">
                                 <div class="flex flex-wrap gap-3   ">
-                                    <img src="./assets/images/tools/html_logo.jpg" class="h-14 w-14  rounded-xl" alt=""
+                                    <img src="./assets/images/tools/html_logo.jpg" class="h-10 w-10  rounded-lg" alt=""
                                         title="HTML">
-                                    <img src="./assets/images/tools/css_logo.svg" class="h-14 w-14  rounded-xl" alt=""
+                                    <img src="./assets/images/tools/css_logo.svg" class="h-10 w-10  rounded-lg" alt=""
                                         title="CSS">
                                     <img src="./assets/images/tools/js_logo.jpg"
-                                        class="h-14 w-14 shadow-sm border rounded-xl" alt="" title="JavaScript">
+                                        class="h-10 w-10 shadow-sm border rounded-lg" alt="" title="JavaScript">
                                     <img src="./assets/images/tools/tailwindcsss.jpg"
-                                        class="h-14 w-14 shadow-sm border rounded-xl" alt="" title="TailwindCSS">
+                                        class="h-10 w-10 shadow-sm border rounded-lg" alt="" title="TailwindCSS">
                                     <img src="./assets/images/tools/Bootstrap_logo.jpg"
-                                        class="h-14 w-14 shadow-sm border rounded-xl" alt="" title="Bootstrap">
-                                    <img src="./assets/images/tools/jquery_logo.jpg" class="h-14 w-14   rounded-xl"
+                                        class="h-10 w-10 shadow-sm border rounded-lg" alt="" title="Bootstrap">
+                                    <img src="./assets/images/tools/jquery_logo.jpg" class="h-10 w-10   rounded-lg"
                                         alt="" title="jQuery">
-                                    <img src="./assets/images/tools/vscode.jpg" class="h-14 w-14   rounded-xl" alt=""
+                                    <img src="./assets/images/tools/vscode.jpg" class="h-10 w-10   rounded-lg" alt=""
                                         title="Visual Studio Code">
                                 </div>
                             </div>
@@ -219,42 +205,42 @@
                         </h3>
                         <div class="grid grid-cols-1 lg:grid-cols-2 w-full gap-6">
                             <div
-                                class="flex justify-between items-center border-b py-2 text-lg hover:text-xl hover:text-blue-500">
+                                class="flex justify-between items-center border-b py-2 text-lg hover:text-xl service_li hover:text-blue-500">
                                 <p class=" ">UI/UX Designing</p>
                                 <span class="material-symbols-outlined">north_east</span>
                             </div>
                             <div
-                                class="flex justify-between items-center border-b py-2 text-lg hover:text-xl hover:text-blue-500">
+                                class="flex justify-between items-center border-b py-2 text-lg hover:text-xl service_li hover:text-blue-500">
                                 <p class="  ">Branding</p>
                                 <span class="material-symbols-outlined">north_east</span>
                             </div>
                             <div
-                                class="flex justify-between items-center border-b py-2 text-lg hover:text-xl hover:text-blue-500">
+                                class="flex justify-between items-center border-b py-2 text-lg hover:text-xl service_li hover:text-blue-500">
                                 <p class="  ">Web Development</p>
                                 <span class="material-symbols-outlined">north_east</span>
                             </div>
                             <div
-                                class="flex justify-between items-center border-b py-2 text-lg hover:text-xl hover:text-blue-500">
+                                class="flex justify-between items-center border-b py-2 text-lg hover:text-xl service_li hover:text-blue-500">
                                 <p class="  ">Graphic Designing</p>
                                 <span class="material-symbols-outlined">north_east</span>
                             </div>
                             <div
-                                class="flex justify-between items-center border-b py-2 text-lg hover:text-xl hover:text-blue-500">
+                                class="flex justify-between items-center border-b py-2 text-lg hover:text-xl service_li hover:text-blue-500">
                                 <p class="  ">Video Editing</p>
                                 <span class="material-symbols-outlined">north_east</span>
                             </div>
                             <div
-                                class="flex justify-between items-center border-b py-2 text-lg hover:text-xl hover:text-blue-500">
+                                class="flex justify-between items-center border-b py-2 text-lg hover:text-xl service_li hover:text-blue-500">
                                 <p class="  ">Mobile App Development</p>
                                 <span class="material-symbols-outlined">north_east</span>
                             </div>
                             <div
-                                class="flex justify-between items-center border-b py-2 text-lg hover:text-xl hover:text-blue-500">
+                                class="flex justify-between items-center border-b py-2 text-lg hover:text-xl service_li hover:text-blue-500">
                                 <p class="  ">2D Illustration Works</p>
                                 <span class="material-symbols-outlined">north_east</span>
                             </div>
                             <div
-                                class="flex justify-between items-center border-b py-2 text-lg hover:text-xl hover:text-blue-500">
+                                class="flex justify-between items-center border-b py-2 text-lg hover:text-xl service_li hover:text-blue-500">
                                 <p class="  ">UI Developement</p>
                                 <span class="material-symbols-outlined">north_east</span>
                             </div>
@@ -314,16 +300,30 @@
             </div>
         </div>
     </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 2,
-            spaceBetween: 30,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
+        $(document).ready(function () {
+            $('.service_li').on('click', function () {
+                window.location.href = 'contact.html';
+            });
+            $('.contact_location').on('click', function () {
+                window.location.href = 'contact.html';
+            });
+            $('.resume_download').on('click', function () {
+                window.open('./assets/resume.pdf', '_blank');
+            });
+        });
+
+        // Select the toggle button and the navbar menu
+        const toggleButton = document.querySelector('.menu');
+        const navbarMenu = document.querySelector('#hs-navbar-alignment');
+
+        // Add event listener to the toggle button
+        toggleButton.addEventListener('click', () => {
+            // Toggle the "hidden" class to show/hide the menu
+            navbarMenu.classList.toggle('hidden');
         });
     </script>
 

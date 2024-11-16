@@ -15,7 +15,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Lexend:wght@100..900&display=swap"
         rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
     <style>
         .custom-font {
             font-family: "Lexend", sans-serif;
@@ -34,31 +33,15 @@
 <body class="mx-auto pt-6">
 
     <header
-        class="flex flex-wrap sm:justify-start sm:flex-nowrap w-full bg-white text-sm py-3 bg-white shadow w-50 lg:container mx-auto  rounded-2xl">
-        <nav class="max-w-[85rem] w-full mx-auto px-4 flex flex-wrap basis-full items-center justify-between">
-            <a class="sm:order-1 flex-none text-2xl font-semibold  focus:outline-none focus:opacity-80 custom-font"
+        class="flex flex-wrap sm:justify-start sticky top-0 h-fit sm:flex-nowrap w-full bg-white text-sm py-3 shadow w-50 lg:container mx-auto  rounded-2xl">
+        <nav class="max-w-[85rem] w-full relative mx-auto px-4 flex flex-wrap basis-full items-center justify-between">
+            <a class="sm:order-1 flex-none text-xl lg:text-2xl font-semibold  focus:outline-none focus:opacity-80 custom-font"
                 href="#">Hi I'm
                 Sunil</a>
             <div class="sm:order-3 flex items-center gap-x-2">
-                <button type="button"
-                    class="sm:hidden hs-collapse-toggle relative size-7 flex justify-center items-center gap-x-2 rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-transparent dark:border-neutral-700 dark:text-white dark:hover:bg-white/10 dark:focus:bg-white/10"
-                    id="hs-navbar-alignment-collapse" aria-expanded="false" aria-controls="hs-navbar-alignment"
-                    aria-label="Toggle navigation" data-hs-collapse="#hs-navbar-alignment">
-                    <svg class="hs-collapse-open:hidden shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24"
-                        height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <line x1="3" x2="21" y1="6" y2="6" />
-                        <line x1="3" x2="21" y1="12" y2="12" />
-                        <line x1="3" x2="21" y1="18" y2="18" />
-                    </svg>
-                    <svg class="hs-collapse-open:block hidden shrink-0 size-4" xmlns="http://www.w3.org/2000/svg"
-                        width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M18 6 6 18" />
-                        <path d="m6 6 12 12" />
-                    </svg>
-                    <span class="sr-only">Toggle</span>
-                </button>
+                <div class="py-2 px-3 menu border rounded-md lg:hidden md:hidden cursor-pointer">
+                    <i class="fa fa-bars text-md"></i>
+                </div>
                 <button type="button"
                     class="py-2 px-8 inline-flex items-center gap-x-2 text-base font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-700 dark:focus:bg-neutral-700">
                     Hire Me
@@ -68,14 +51,13 @@
                 class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:grow-0 sm:basis-auto sm:block sm:order-2"
                 aria-labelledby="hs-navbar-alignment-collapse">
                 <div class="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:mt-0 custom-font sm:ps-5 ">
-                    <a class="font-medium text-lg text-gray-400 hover:text-gray-600 focus:text-gray-400 focus:outline-none "
-                        href="index.html">Home</a>
+                    <a class="font-medium text-lg  text-gray-400 hover:text-gray-600 focus:text-gray-400 focus:outline-none "
+                        href="index.html" aria-current="page">Home</a>
                     <a class="font-medium text-lg  text-gray-400 hover:text-gray-600 focus:text-gray-400 focus:outline-none"
                         href="about.html">About</a>
                     <a class="font-medium text-lg text-gray-400 hover:text-gray-600 focus:outline-none focus:text-gray-400"
                         href="projects.html">Projects</a>
-                    <a class="font-medium text-lg text-blue-500 focus:outline-none " href="contact.html"
-                        aria-current="page">Contact</a>
+                    <a class="font-medium text-lg text-blue-500 focus:outline-none " href="contact.html">Contact</a>
 
                 </div>
             </div>
@@ -83,8 +65,7 @@
     </header>
 
     <main class="container mx-auto my-6 lg:h-[92vh] lg:overflow-hidden">
-        <div
-            class="lg:grid flex flex-col  grid-cols-1 lg:grid-cols-3 gap-6 h-full">
+        <div class="lg:grid flex flex-col  grid-cols-1 lg:grid-cols-3 gap-6 h-full">
             <div class="bg-white p-6 grid gap-3 shadow rounded-2xl">
                 <div class=" flex flex-col gap-6 ">
                     <img src="./assets/images/hero.jpg" class="w-full rounded-lg" alt="">
@@ -97,37 +78,34 @@
                     </div>
                     <div class="flex gap-2">
                         <button
-                            class="lg:w-6/12 lg:p-1 h-14 w-11/12 border items-center justify-center flex gap-1 shadow-sm p-2 text-lg font-semibold rounded-md"
+                            class="lg:w-6/12 lg:p-1 h-12 lg:h-14 w-11/12 border contact_location items-center justify-center flex gap-1 shadow-sm p-2 text-lg font-semibold rounded-md"
                             type="button">Hire
                             me <span class="material-symbols-outlined">message</span> </button>
                         <button
-                            class="lg:w-6/12 lg:p-1 h-14 w-11/12 bg-blue-500 text-white border items-center justify-center flex gap-1 shadow-sm p-2 text-lg font-semibold rounded-md"
+                            class="lg:w-6/12 lg:p-1 h-12 lg:h-14 w-11/12 bg-blue-500 text-white border resume_download items-center justify-center flex gap-1 shadow-sm p-2 text-lg font-semibold rounded-md"
                             type="button">Resume <span class="material-symbols-outlined">download</span> </button>
                     </div>
                     <div class="flex gap-3">
-                        <a href="https://github.com/safikumar00">
-                            <div
-                                class="p-2 border shadow-sm rounded-md w-12 h-12 grid items-center justify-center text-center">
+                        <a href="https://github.com/safikumar00" target="_blank" rel="noopener noreferrer">
+                            <div class="p-2 border rounded-md w-12 h-12 grid items-center justify-center text-center">
                                 <i class="social-links fa fa-github"></i>
                             </div>
                         </a>
-                        <a href="https://codepen.io/safikumar00">
-                            <div
-                                class="p-2 border shadow-sm rounded-md w-12 h-12 grid items-center justify-center text-center">
+                        <a href="https://codepen.io/safikumar00" target="_blank" rel="noopener noreferrer">
+                            <div class="p-2 border rounded-md w-12 h-12 grid items-center justify-center text-center">
                                 <i class="social-links fa fa-codepen"></i>
 
                             </div>
                         </a>
-                        <a href="https://www.linkedin.com/in/sunil-kumar-ab0a9b24b/">
-                            <div
-                                class="p-2 border shadow-sm rounded-md w-12 h-12 grid items-center justify-center text-center">
+                        <a href="https://www.linkedin.com/in/sunil-kumar-ab0a9b24b/" target="_blank"
+                            rel="noopener noreferrer">
+                            <div class="p-2 border rounded-md w-12 h-12 grid items-center justify-center text-center">
                                 <i class="social-links fa fa-linkedin"></i>
 
                             </div>
                         </a>
-                        <a href="https://www.behance.net/8fc59bees">
-                            <div
-                                class="p-2 border shadow-sm rounded-md w-12 h-12 grid items-center justify-center text-center">
+                        <a href="https://www.behance.net/8fc59bee" target="_blank" rel="noopener noreferrer">
+                            <div class="p-2 border rounded-md w-12 h-12 grid items-center justify-center text-center">
                                 <i class="social-links fa fa-behance"></i>
 
                             </div>
@@ -156,9 +134,14 @@
                     <div class="w-full flex flex-wrap gap-3">
                         <button class="lg:p-1 h-11 w-full lg:w-40 border border-black shadow p-2  text-lg rounded-md"
                             type="button"> <i class="bi bi-telephone-fill px-1 text-gray-900"></i> 8790549591</button>
-                        <button class="lg:p-1 h-11 w-full lg:w-40 bg-gray-900 text-white border shadow-sm p-2 text-lg rounded-md"
-                            type="button"><i class="bi bi-envelope-fill px-1 text-white"></i>
-                            Copy Mail</button>
+                        <input type="text" id="emailAddress" value="sk16331ee059@mail.com" readonly hidden>
+
+                        <button
+                            class="lg:p-1 h-11 w-full lg:w-40 copy_mail bg-gray-900 text-white border shadow-sm p-2 text-lg rounded-md"
+                            type="button" onclick="copyEmailToClipboard()">
+                            <i class="bi bi-envelope-fill px-1 text-white"></i>
+                            Copy Mail
+                        </button>
                     </div>
                     <hr>
                     <div class="grid grid-flow-col-1 lg:grid-cols-2">
@@ -208,6 +191,66 @@
             </div>
         </div>
     </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('.service_li').on('click', function () {
+                window.location.href = 'contact.html';
+            });
+            $('.contact_location').on('click', function () {
+                window.location.href = 'contact.html';
+            });
+            $('.resume_download').on('click', function () {
+                window.open('./assets/resume.pdf', '_blank');
+            });
+        });
+
+        // Select the toggle button and the navbar menu
+        const toggleButton = document.querySelector('.menu');
+        const navbarMenu = document.querySelector('#hs-navbar-alignment');
+
+        // Add event listener to the toggle button
+        toggleButton.addEventListener('click', () => {
+            // Toggle the "hidden" class to show/hide the menu
+            navbarMenu.classList.toggle('hidden');
+        });
+
+        function copyEmailToClipboard() {
+            // Get the email input field
+            const emailInput = document.getElementById("emailAddress");
+
+            // Create a temporary text area element to handle copying
+            const tempInput = document.createElement("textarea");
+            tempInput.value = emailInput.value;
+            document.body.appendChild(tempInput);
+
+            // Select the value and copy it to the clipboard
+            tempInput.select();
+            tempInput.setSelectionRange(0, 99999); // For mobile devices
+
+            try {
+                document.execCommand("copy");
+
+                // Update the button's text to indicate success
+                const successMessage = document.querySelector(".copy_mail"); // Ensure this class exists on the button
+                successMessage.innerHTML = "<i class='bi bi-checkmark px-1 text-green-400'></i> Copied!";
+
+                // Reset the button text after 3 seconds
+                setTimeout(() => {
+                    successMessage.innerHTML = "<i class='bi bi-envelope-fill px-1 text-white'></i> Copy Mail";
+                }, 3000);
+            } catch (err) {
+                alert("Failed to copy email. Please try again.");
+            }
+
+            // Remove the temporary text area
+            document.body.removeChild(tempInput);
+        }
+
+
+    </script>
 </body>
 
 </html>

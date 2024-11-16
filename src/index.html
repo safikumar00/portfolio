@@ -13,10 +13,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Lexend:wght@100..900&display=swap"
     rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
   <style>
     .custom-font {
       font-family: "Lexend", sans-serif;
+    }
+    .service_li{
+      cursor: pointer;
     }
   </style>
 
@@ -25,33 +27,17 @@
 
 <body class="mx-auto">
   <header
-    class="flex flex-wrap sm:justify-start sm:flex-nowrap w-full bg-white text-sm py-3 bg-white shadow w-50 lg:container mx-auto  rounded-2xl">
-    <nav class="max-w-[85rem] w-full mx-auto px-4 flex flex-wrap basis-full items-center justify-between">
-      <a class="sm:order-1 flex-none text-2xl font-semibold  focus:outline-none focus:opacity-80 custom-font"
+    class="flex flex-wrap sm:justify-start sticky top-0 h-fit sm:flex-nowrap w-full bg-white text-sm py-3 shadow w-50 lg:container mx-auto  rounded-2xl">
+    <nav class="max-w-[85rem] w-full relative mx-auto px-4 flex flex-wrap basis-full items-center justify-between">
+      <a class="sm:order-1 flex-none text-xl lg:text-2xl font-semibold  focus:outline-none focus:opacity-80 custom-font"
         href="#">Hi I'm
         Sunil</a>
       <div class="sm:order-3 flex items-center gap-x-2">
+        <div class="py-2 px-3 menu border rounded-md lg:hidden md:hidden cursor-pointer">
+          <i class="fa fa-bars text-md"></i>
+        </div>
         <button type="button"
-          class="sm:hidden hs-collapse-toggle relative size-7 flex justify-center items-center gap-x-2 rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-transparent dark:border-neutral-700 dark:text-white dark:hover:bg-white/10 dark:focus:bg-white/10"
-          id="hs-navbar-alignment-collapse" aria-expanded="false" aria-controls="hs-navbar-alignment"
-          aria-label="Toggle navigation" data-hs-collapse="#hs-navbar-alignment">
-          <svg class="hs-collapse-open:hidden shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-            stroke-linejoin="round">
-            <line x1="3" x2="21" y1="6" y2="6" />
-            <line x1="3" x2="21" y1="12" y2="12" />
-            <line x1="3" x2="21" y1="18" y2="18" />
-          </svg>
-          <svg class="hs-collapse-open:block hidden shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24"
-            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-            stroke-linejoin="round">
-            <path d="M18 6 6 18" />
-            <path d="m6 6 12 12" />
-          </svg>
-          <span class="sr-only">Toggle</span>
-        </button>
-        <button type="button"
-          class="py-2 px-8 inline-flex contact_location items-center contact_location gap-x-2 text-base font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-700 dark:focus:bg-neutral-700">
+          class="py-2 px-8 inline-flex items-center contact_location gap-x-2 text-base font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-700 dark:focus:bg-neutral-700">
           Hire Me
         </button>
       </div>
@@ -86,29 +72,37 @@
           </div>
           <div class="flex gap-2">
             <button
-              class="lg:w-6/12 lg:p-1 h-14 w-11/12 border contact_location items-center justify-center flex gap-1 shadow-sm p-2 text-lg font-semibold rounded-md"
+              class="lg:w-6/12 lg:p-1 h-12 lg:h-14 w-11/12 border contact_location items-center justify-center flex gap-1 shadow-sm p-2 text-lg font-semibold rounded-md"
               type="button">Hire
               me <span class="material-symbols-outlined">message</span> </button>
             <button
-              class="lg:w-6/12 lg:p-1 h-14 w-11/12 bg-blue-500 text-white border resume_download items-center justify-center flex gap-1 shadow-sm p-2 text-lg font-semibold rounded-md"
+              class="lg:w-6/12 lg:p-1 h-12 lg:h-14 w-11/12 bg-blue-500 text-white border resume_download items-center justify-center flex gap-1 shadow-sm p-2 text-lg font-semibold rounded-md"
               type="button">Resume <span class="material-symbols-outlined">download</span> </button>
           </div>
           <div class="flex gap-3">
-            <div class="p-2 border rounded-md w-12 h-12 grid items-center justify-center text-center">
-              <i class="social-links fa fa-github"></i>
-            </div>
-            <div class="p-2 border rounded-md w-12 h-12 grid items-center justify-center text-center">
-              <i class="social-links fa fa-codepen"></i>
+            <a href="https://github.com/safikumar00" target="_blank" rel="noopener noreferrer">
+              <div class="p-2 border rounded-md w-12 h-12 grid items-center justify-center text-center">
+                <i class="social-links fa fa-github"></i>
+              </div>
+            </a>
+            <a href="https://codepen.io/safikumar00" target="_blank" rel="noopener noreferrer">
+              <div class="p-2 border rounded-md w-12 h-12 grid items-center justify-center text-center">
+                <i class="social-links fa fa-codepen"></i>
 
-            </div>
-            <div class="p-2 border rounded-md w-12 h-12 grid items-center justify-center text-center">
-              <i class="social-links fa fa-linkedin"></i>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/sunil-kumar-ab0a9b24b/" target="_blank" rel="noopener noreferrer">
+              <div class="p-2 border rounded-md w-12 h-12 grid items-center justify-center text-center">
+                <i class="social-links fa fa-linkedin"></i>
 
-            </div>
-            <div class="p-2 border rounded-md w-12 h-12 grid items-center justify-center text-center">
-              <i class="social-links fa fa-behance"></i>
+              </div>
+            </a>
+            <a href="https://www.behance.net/8fc59bee" target="_blank" rel="noopener noreferrer">
+              <div class="p-2 border rounded-md w-12 h-12 grid items-center justify-center text-center">
+                <i class="social-links fa fa-behance"></i>
 
-            </div>
+              </div>
+            </a>
           </div>
         </div>
       </div>
@@ -298,48 +292,48 @@
           <div class="flex flex-wrap items-center justify-between gap-2">
             <h3 class="text-2xl font-semibold dark:text-light custom-font">Services</h3>
             <a href="contact.html"
-              class="inline-flex items-center justify-center gap-2 border-b text-center text-base text-primary transition hover:border-b-primary dark:border-b-muted dark:hover:border-b-primary">
+              class="inline-flex items-center contact_location justify-center gap-2 border-b text-center text-base text-primary transition hover:border-b-primary dark:border-b-muted dark:hover:border-b-primary">
               <span>Hire me</span>
               <span class="material-symbols-outlined">arrow_forward</span>
             </a>
             <div class="grid gap-3 w-full mt-3">
               <div
-                class="flex justify-between items-center justify-center border-b py-2 text-lg hover:text-xl service_li hover:text-blue-500">
+                class="flex justify-between items-center border-b py-2 text-lg hover:text-xl service_li   hover:text-blue-500">
                 <p class="">UI/UX Designing</p>
                 <span class="material-symbols-outlined">north_east</span>
               </div>
               <div
-                class="flex justify-between items-center justify-center border-b py-2 text-lg hover:text-xl service_li hover:text-blue-500">
+                class="flex justify-between items-center border-b py-2 text-lg hover:text-xl service_li   hover:text-blue-500">
                 <p class="  ">Branding</p>
                 <span class="material-symbols-outlined">north_east</span>
               </div>
               <div
-                class="flex justify-between items-center justify-center border-b py-2 text-lg hover:text-xl service_li hover:text-blue-500">
+                class="flex justify-between items-center border-b py-2 text-lg hover:text-xl service_li   hover:text-blue-500">
                 <p class="  ">Web Development</p>
                 <span class="material-symbols-outlined">north_east</span>
               </div>
               <div
-                class="flex justify-between items-center justify-center border-b py-2 text-lg hover:text-xl service_li hover:text-blue-500">
+                class="flex justify-between items-center border-b py-2 text-lg hover:text-xl service_li   hover:text-blue-500">
                 <p class="  ">Graphic Designing</p>
                 <span class="material-symbols-outlined">north_east</span>
               </div>
               <div
-                class="flex justify-between items-center justify-center border-b py-2 text-lg hover:text-xl service_li hover:text-blue-500">
+                class="flex justify-between items-center border-b py-2 text-lg hover:text-xl service_li   hover:text-blue-500">
                 <p class="  ">Video Editing</p>
                 <span class="material-symbols-outlined">north_east</span>
               </div>
               <div
-                class="flex justify-between items-center justify-center border-b py-2 text-lg hover:text-xl service_li hover:text-blue-500">
+                class="flex justify-between items-center border-b py-2 text-lg hover:text-xl service_li   hover:text-blue-500">
                 <p class="  ">Mobile App Development</p>
                 <span class="material-symbols-outlined">north_east</span>
               </div>
               <div
-                class="flex justify-between items-center justify-center border-b py-2 text-lg hover:text-xl service_li hover:text-blue-500">
+                class="flex justify-between items-center border-b py-2 text-lg hover:text-xl service_li   hover:text-blue-500">
                 <p class="  ">2D Illustration Works</p>
                 <span class="material-symbols-outlined">north_east</span>
               </div>
               <div
-                class="flex justify-between items-center justify-center border-b py-2 text-lg hover:text-xl service_li hover:text-blue-500">
+                class="flex justify-between items-center border-b py-2 text-lg hover:text-xl service_li   hover:text-blue-500">
                 <p class="  ">UI Developement</p>
                 <span class="material-symbols-outlined">north_east</span>
               </div>
@@ -427,9 +421,19 @@
       $('.contact_location').on('click', function () {
         window.location.href = 'contact.html';
       });
-      $('.resume_download').on('click', function () { 
+      $('.resume_download').on('click', function () {
         window.open('./assets/resume.pdf', '_blank');
       });
+    });
+
+    // Select the toggle button and the navbar menu
+    const toggleButton = document.querySelector('.menu');
+    const navbarMenu = document.querySelector('#hs-navbar-alignment');
+
+    // Add event listener to the toggle button
+    toggleButton.addEventListener('click', () => {
+      // Toggle the "hidden" class to show/hide the menu
+      navbarMenu.classList.toggle('hidden');
     });
   </script>
 </body>
